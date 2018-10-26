@@ -1,0 +1,4 @@
+#Fri Oct 26 12:09:39 HST 2018
+base.0=/Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
