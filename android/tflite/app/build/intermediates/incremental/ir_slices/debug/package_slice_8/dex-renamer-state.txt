@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 #Sun Oct 28 17:55:07 HST 2018
+=======
+#Sun Oct 28 13:53:02 HST 2018
+base.0=/Users/SaeHyunSong/Documents/GitHub/FlowerAI/android/tflite/app/build/intermediates/transforms/dexMerger/debug/8
+path.0=classes.dex
+renamed.0=classes.dex
+>>>>>>> master

@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\ongak\\Documents\\GitHub\\FlowerAI\\android\\tflite\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ongak\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\bc15f639d32e8837cf8146822502552d\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+=======
+            "outputFile": "/Users/SaeHyunSong/Documents/GitHub/FlowerAI/android/tflite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/SaeHyunSong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/0cf840c29e17f6bff9769f76e6366676/res/values-h720dp-v13/values-h720dp-v13.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
