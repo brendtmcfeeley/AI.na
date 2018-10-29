@@ -6,11 +6,18 @@ import requests
 import time
 import sys
 
-#driver = webdriver.Chrome()
+driver = webdriver.Chrome()
+findElement = driver.find_element_by_xpath
+
+def startSearch(searchParam):
+    if (not searchParam):
+        return None
+        
+    findElement("//input[@aria-label='Search']").send_keys('yes')
 
 def main():
-    #driver.get('https://www.google.com')
-    print(sys.argv[1]) # Arg 1 will be used for the item to be searched for
+    driver.get('https://www.google.com')
+    startSearch(sys.argv[1])
 
 if __name__ == '__main__':
     main()
