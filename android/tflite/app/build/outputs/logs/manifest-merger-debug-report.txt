@@ -1,154 +1,154 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
-MERGED from [com.android.support:design:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/4034da9852a77b9dd5ed508f25135799/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/84963a804cd111ccc917b1769b8cce9a/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e3dde22e14f0cd6ec7c8b00525449f6/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v13:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v13-25.2.0.aar/013c8b3259a5977dcc228d13a94004c9/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/f7e853eda1acf217093e481e06377405/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/67ee3a32d0adbb9d57ae141d7ae08cd3/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:recyclerview-v7:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.2.0.aar/bc41d213b51bd360115b67adaba3cf7f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/transition-25.2.0.aar/792cde7ba5de624049740370f85d4fd8/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-v4:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/7224ca1beb224e2363536c83b7079ca9/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/0af9e07c0b429acae60de2b0619bdc59/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/2591e74ef28e74577d468acfdb811c64/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/3bd20db7f2e06a4322eb1a370d0a5549/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/c797328af58ec3482fb2bb5bac12b1b6/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/da3224d841cb688520c45301064443f1/AndroidManifest.xml:17:1-27:12
-MERGED from [org.tensorflow:tensorflow-lite:1.10.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.10.0.aar/2f232f6d35b6e8a7c9dd0c325401cf9c/AndroidManifest.xml:2:1-6:12
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
+MERGED from [com.android.support:design:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\e855a25f46f6dd340e3f8158c64d76e7\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\bc15f639d32e8837cf8146822502552d\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ce0213f36ff9d62d6fe3cbb0707dcca6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v13:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v13-25.2.0.aar\39d8533d12ef4134b8d6b25c66f612d0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\cc8e3f2555bf1bb49f68d561aed653eb\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\87c01f389042ed229d47722a59b6657f\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\d1f49bced539075b0603fa72c1e06127\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\2ceb6379237f9a1f5f413bd24ff8eb65\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\fd39571edc4a43e8ddd72b9f5c490a2d\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\aca77beef1265189e02d711d5844b46c\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\4ace4f966cfc09260eee04452b7562a4\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\f17ada6dcff67a1d76b9d325b2c0ce66\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\92bf65c037dd3545704f0bb88f9c39d9\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\69f9aaa4d672bbb80a87697f51ea0c0e\AndroidManifest.xml:17:1-27:12
+MERGED from [org.tensorflow:tensorflow-lite:1.10.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\tensorflow-lite-1.10.0.aar\9f673664b71287a0cfeb8cd60d057166\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
 	package
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:19:5-51
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:19:5-51
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:11-69
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:11-69
 uses-permission#android.permission.CAMERA
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:21:5-65
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:21:5-65
 	android:name
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:21:22-62
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:21:22-62
 uses-feature#android.hardware.camera
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:23:5-60
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:23:5-60
 	android:name
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:23:19-57
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:23:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:24:5-70
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:24:5-70
 	android:name
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:24:19-67
-uses-sdk
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:26:5-44
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:26:5-44
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:26:5-44
-MERGED from [com.android.support:design:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/4034da9852a77b9dd5ed508f25135799/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/4034da9852a77b9dd5ed508f25135799/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/84963a804cd111ccc917b1769b8cce9a/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/84963a804cd111ccc917b1769b8cce9a/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e3dde22e14f0cd6ec7c8b00525449f6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e3dde22e14f0cd6ec7c8b00525449f6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v13:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v13-25.2.0.aar/013c8b3259a5977dcc228d13a94004c9/AndroidManifest.xml:21:5-23:55
-MERGED from [com.android.support:support-v13:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v13-25.2.0.aar/013c8b3259a5977dcc228d13a94004c9/AndroidManifest.xml:21:5-23:55
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/f7e853eda1acf217093e481e06377405/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/f7e853eda1acf217093e481e06377405/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/67ee3a32d0adbb9d57ae141d7ae08cd3/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/67ee3a32d0adbb9d57ae141d7ae08cd3/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:recyclerview-v7:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.2.0.aar/bc41d213b51bd360115b67adaba3cf7f/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.2.0.aar/bc41d213b51bd360115b67adaba3cf7f/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/transition-25.2.0.aar/792cde7ba5de624049740370f85d4fd8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/transition-25.2.0.aar/792cde7ba5de624049740370f85d4fd8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/7224ca1beb224e2363536c83b7079ca9/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/7224ca1beb224e2363536c83b7079ca9/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/0af9e07c0b429acae60de2b0619bdc59/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/0af9e07c0b429acae60de2b0619bdc59/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/2591e74ef28e74577d468acfdb811c64/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/2591e74ef28e74577d468acfdb811c64/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/3bd20db7f2e06a4322eb1a370d0a5549/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/3bd20db7f2e06a4322eb1a370d0a5549/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/c797328af58ec3482fb2bb5bac12b1b6/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/c797328af58ec3482fb2bb5bac12b1b6/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/da3224d841cb688520c45301064443f1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/da3224d841cb688520c45301064443f1/AndroidManifest.xml:21:5-23:58
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:26:5-44
-INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:26:5-44
-	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/4034da9852a77b9dd5ed508f25135799/AndroidManifest.xml:23:9-59
-	android:targetSdkVersion
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:26:5-44
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:26:15-41
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:24:19-67
 application
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:28:5-40:19
-MERGED from [com.android.support:design:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/4034da9852a77b9dd5ed508f25135799/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:design:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/4034da9852a77b9dd5ed508f25135799/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/84963a804cd111ccc917b1769b8cce9a/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/84963a804cd111ccc917b1769b8cce9a/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e3dde22e14f0cd6ec7c8b00525449f6/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/6e3dde22e14f0cd6ec7c8b00525449f6/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-v13:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v13-25.2.0.aar/013c8b3259a5977dcc228d13a94004c9/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v13:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v13-25.2.0.aar/013c8b3259a5977dcc228d13a94004c9/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/f7e853eda1acf217093e481e06377405/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/f7e853eda1acf217093e481e06377405/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/67ee3a32d0adbb9d57ae141d7ae08cd3/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/67ee3a32d0adbb9d57ae141d7ae08cd3/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:transition:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/transition-25.2.0.aar/792cde7ba5de624049740370f85d4fd8/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:transition:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/transition-25.2.0.aar/792cde7ba5de624049740370f85d4fd8/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/7224ca1beb224e2363536c83b7079ca9/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/7224ca1beb224e2363536c83b7079ca9/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/0af9e07c0b429acae60de2b0619bdc59/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/0af9e07c0b429acae60de2b0619bdc59/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/2591e74ef28e74577d468acfdb811c64/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/2591e74ef28e74577d468acfdb811c64/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/3bd20db7f2e06a4322eb1a370d0a5549/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/3bd20db7f2e06a4322eb1a370d0a5549/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/c797328af58ec3482fb2bb5bac12b1b6/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/c797328af58ec3482fb2bb5bac12b1b6/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/da3224d841cb688520c45301064443f1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/da3224d841cb688520c45301064443f1/AndroidManifest.xml:25:5-20
-MERGED from [org.tensorflow:tensorflow-lite:1.10.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.10.0.aar/2f232f6d35b6e8a7c9dd0c325401cf9c/AndroidManifest.xml:4:5-5:19
-MERGED from [org.tensorflow:tensorflow-lite:1.10.0] /Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/tensorflow-lite-1.10.0.aar/2f232f6d35b6e8a7c9dd0c325401cf9c/AndroidManifest.xml:4:5-5:19
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:26:5-38:19
+MERGED from [com.android.support:design:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\e855a25f46f6dd340e3f8158c64d76e7\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\e855a25f46f6dd340e3f8158c64d76e7\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\bc15f639d32e8837cf8146822502552d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\bc15f639d32e8837cf8146822502552d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ce0213f36ff9d62d6fe3cbb0707dcca6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ce0213f36ff9d62d6fe3cbb0707dcca6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-v13:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v13-25.2.0.aar\39d8533d12ef4134b8d6b25c66f612d0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v13:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v13-25.2.0.aar\39d8533d12ef4134b8d6b25c66f612d0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\cc8e3f2555bf1bb49f68d561aed653eb\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\cc8e3f2555bf1bb49f68d561aed653eb\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\87c01f389042ed229d47722a59b6657f\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\87c01f389042ed229d47722a59b6657f\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\2ceb6379237f9a1f5f413bd24ff8eb65\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\2ceb6379237f9a1f5f413bd24ff8eb65\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\fd39571edc4a43e8ddd72b9f5c490a2d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\fd39571edc4a43e8ddd72b9f5c490a2d\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\aca77beef1265189e02d711d5844b46c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\aca77beef1265189e02d711d5844b46c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\4ace4f966cfc09260eee04452b7562a4\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\4ace4f966cfc09260eee04452b7562a4\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\f17ada6dcff67a1d76b9d325b2c0ce66\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\f17ada6dcff67a1d76b9d325b2c0ce66\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\92bf65c037dd3545704f0bb88f9c39d9\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\92bf65c037dd3545704f0bb88f9c39d9\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\69f9aaa4d672bbb80a87697f51ea0c0e\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\69f9aaa4d672bbb80a87697f51ea0c0e\AndroidManifest.xml:25:5-20
+MERGED from [org.tensorflow:tensorflow-lite:1.10.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\tensorflow-lite-1.10.0.aar\9f673664b71287a0cfeb8cd60d057166\AndroidManifest.xml:4:5-5:19
+MERGED from [org.tensorflow:tensorflow-lite:1.10.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\tensorflow-lite-1.10.0.aar\9f673664b71287a0cfeb8cd60d057166\AndroidManifest.xml:4:5-5:19
 	android:label
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:29:9-41
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:27:9-41
 	android:icon
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:30:9-45
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:28:9-45
 	android:allowBackup
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:28:18-44
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:26:18-44
 	android:theme
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:31:9-45
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:29:9-45
 activity#com.example.android.tflitecamerademo.CameraActivity
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:33:9-39:20
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:31:9-37:20
 	android:label
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:34:19-51
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:32:19-51
 	android:name
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:33:19-85
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:35:13-38:29
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:31:19-85
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:33:13-36:29
 action#android.intent.action.MAIN
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:36:17-69
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:36:25-66
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:37:17-77
+ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:37:27-74
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:35:27-74
+uses-sdk
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\e855a25f46f6dd340e3f8158c64d76e7\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\e855a25f46f6dd340e3f8158c64d76e7\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\bc15f639d32e8837cf8146822502552d\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.2.0.aar\bc15f639d32e8837cf8146822502552d\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ce0213f36ff9d62d6fe3cbb0707dcca6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\ce0213f36ff9d62d6fe3cbb0707dcca6\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v13:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v13-25.2.0.aar\39d8533d12ef4134b8d6b25c66f612d0\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:support-v13:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v13-25.2.0.aar\39d8533d12ef4134b8d6b25c66f612d0\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\cc8e3f2555bf1bb49f68d561aed653eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.2.0.aar\cc8e3f2555bf1bb49f68d561aed653eb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\87c01f389042ed229d47722a59b6657f\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.2.0.aar\87c01f389042ed229d47722a59b6657f\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\d1f49bced539075b0603fa72c1e06127\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.2.0.aar\d1f49bced539075b0603fa72c1e06127\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\2ceb6379237f9a1f5f413bd24ff8eb65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\transition-25.2.0.aar\2ceb6379237f9a1f5f413bd24ff8eb65\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\fd39571edc4a43e8ddd72b9f5c490a2d\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-v4-25.2.0.aar\fd39571edc4a43e8ddd72b9f5c490a2d\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\aca77beef1265189e02d711d5844b46c\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-fragment-25.2.0.aar\aca77beef1265189e02d711d5844b46c\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\4ace4f966cfc09260eee04452b7562a4\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.2.0.aar\4ace4f966cfc09260eee04452b7562a4\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\f17ada6dcff67a1d76b9d325b2c0ce66\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.2.0.aar\f17ada6dcff67a1d76b9d325b2c0ce66\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\92bf65c037dd3545704f0bb88f9c39d9\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.2.0.aar\92bf65c037dd3545704f0bb88f9c39d9\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\69f9aaa4d672bbb80a87697f51ea0c0e\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\support-compat-25.2.0.aar\69f9aaa4d672bbb80a87697f51ea0c0e\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.2.0] C:\Users\ongak\.gradle\caches\transforms-1\files-1.1\design-25.2.0.aar\e855a25f46f6dd340e3f8158c64d76e7\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12 reason: org.tensorflow.lite has a targetSdkVersion < 4
+IMPLIED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12 reason: org.tensorflow.lite has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12 reason: org.tensorflow.lite has a targetSdkVersion < 4
+IMPLIED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12 reason: org.tensorflow.lite has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/AndroidManifest.xml:18:1-42:12 reason: org.tensorflow.lite requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\Users\ongak\Documents\GitHub\FlowerAI\android\tflite\app\src\main\AndroidManifest.xml:18:1-40:12 reason: org.tensorflow.lite requested WRITE_EXTERNAL_STORAGE

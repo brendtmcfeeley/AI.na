@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\ongak\\Documents\\GitHub\\FlowerAI\\android\\tflite\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/84963a804cd111ccc917b1769b8cce9a/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\ongak\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\bc15f639d32e8837cf8146822502552d\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

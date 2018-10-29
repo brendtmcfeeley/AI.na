@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\ongak\\Documents\\GitHub\\FlowerAI\\android\\tflite\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/84963a804cd111ccc917b1769b8cce9a/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\ongak\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.2.0.aar\\bc15f639d32e8837cf8146822502552d\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,13 +14,13 @@
                     }
                 },
                 {
-                    "source": "/Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/res/values-sw600dp/template-dimens.xml",
+                    "source": "C:\\Users\\ongak\\Documents\\GitHub\\FlowerAI\\android\\tflite\\app\\src\\main\\res\\values-sw600dp\\template-dimens.xml",
                     "from": {
                         "startLines": "20,21",
                         "startColumns": "4,4",
-                        "startOffsets": "656,724",
+                        "startOffsets": "676,745",
                         "endColumns": "67,67",
-                        "endOffsets": "719,787"
+                        "endOffsets": "739,808"
                     },
                     "to": {
                         "startLines": "18,19",
@@ -31,14 +31,14 @@
                     }
                 },
                 {
-                    "source": "/Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/src/main/res/values-sw600dp/template-styles.xml",
+                    "source": "C:\\Users\\ongak\\Documents\\GitHub\\FlowerAI\\android\\tflite\\app\\src\\main\\res\\values-sw600dp\\template-styles.xml",
                     "from": {
                         "startLines": "18",
                         "startColumns": "4",
-                        "startOffsets": "621",
+                        "startOffsets": "639",
                         "endLines": "22",
                         "endColumns": "12",
-                        "endOffsets": "861"
+                        "endOffsets": "883"
                     },
                     "to": {
                         "startLines": "25",
@@ -50,7 +50,7 @@
                     }
                 },
                 {
-                    "source": "/Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/4034da9852a77b9dd5ed508f25135799/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\ongak\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.2.0.aar\\e855a25f46f6dd340e3f8158c64d76e7\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
