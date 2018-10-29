@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/brendtmcfeeley/Documents/GitHub/FlowerAI/android/tflite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/SaeHyunSong/Documents/GitHub/FlowerAI/android/tflite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/4034da9852a77b9dd5ed508f25135799/res/values-land/values-land.xml",
+                    "source": "/Users/SaeHyunSong/.gradle/caches/transforms-1/files-1.1/design-25.2.0.aar/eb3415fdef30dbf3a2a7e5d9eabc0ae9/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/brendtmcfeeley/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/84963a804cd111ccc917b1769b8cce9a/res/values-land/values-land.xml",
+                    "source": "/Users/SaeHyunSong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/0cf840c29e17f6bff9769f76e6366676/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
