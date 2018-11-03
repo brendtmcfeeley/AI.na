@@ -7,5 +7,14 @@ libs/
 local.properties
 android.iml
 .gradle/
-android/assets/*
 .DS_Store
+android/assets/*
+android/tflite/app/build/intermediates/transforms/dexBuilder/debug/
+android/tflite/app/build/intermediates/transforms/dexMerger/debug/
+android/tflite/app/build/intermediates/incremental/packageDebug/tmp/debug/
+android/tflite/app/build/intermediates/incremental/mergeDebugResources/merged.dir/
+android/tflite/app/build/intermediates/incremental/mergeDebugAndroidTestResources/
+android/tflite/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties
+android/tflite/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/
+android/tflite/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/
+android/tflite/app/build/intermediates/res/merged/debug/
