@@ -9,6 +9,7 @@ android.iml
 .gradle/
 .DS_Store
 android/assets/*
+android/tflite/app/build/
 android/tflite/app/build/intermediates/transforms/dexBuilder/debug/
 android/tflite/app/build/intermediates/transforms/dexMerger/debug/
 android/tflite/app/build/intermediates/incremental/packageDebug/tmp/debug/
