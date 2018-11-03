@@ -37,3 +37,4 @@ android/tflite/app/build/intermediates/incremental/mergeDebugJniLibFolders/
 android/tflite/app/build/intermediates/incremental/mergeDebugResources/
 android/tflite/app/build/intermediates/incremental/mergeDebugShaders/
 android/tflite/app/build/intermediates/merged_manifests/debugAndroidTest/
+android/tflite/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/
