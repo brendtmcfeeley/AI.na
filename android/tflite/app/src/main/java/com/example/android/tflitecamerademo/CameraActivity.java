@@ -16,7 +16,15 @@ limitations under the License.
 package com.example.android.tflitecamerademo;
 
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 /** Main {@code Activity} class for the Camera app. */
 public class CameraActivity extends Activity {
@@ -28,8 +36,59 @@ public class CameraActivity extends Activity {
     if (null == savedInstanceState) {
       getFragmentManager()
           .beginTransaction()
-          .replace(R.id.container, Camera2BasicFragment.newInstance())
+          .replace(R.id.container_cam, Camera2BasicFragment.newInstance())
           .commit();
     }
+
+    Toolbar toolbar = findViewById(R.id.toolbar);
+    SearchView searchView = findViewById(R.id.search);
+    TextView textView = findViewById(R.id.search_text);
+    ImageButton imageButton = findViewById(R.id.imageButton2);
+    toolbar.bringToFront();
+
+    textView.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        searchView.setIconified(false);
+      }
+    });
+
+    imageButton.setOnClickListener(new View.OnClickListener(){
+      @Override
+      public void onClick(View view) {
+        searchView.setIconified(true);
+      }
+    });
+
+    searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
+      @Override
+      public void onFocusChange(View v, boolean hasFocus) {
+        if (hasFocus) {
+          // searchView expanded
+          textView.setVisibility(View.INVISIBLE);
+          imageButton.setVisibility(View.VISIBLE);
+          changeFragment(1);
+        } else {
+          // searchView not expanded
+          textView.setVisibility(View.VISIBLE);
+          imageButton.setVisibility(View.GONE);
+          changeFragment(2);
+        }
+      }
+    });
+  }
+
+  private void changeFragment(int frag_id){
+    FragmentManager fragmentManager = getFragmentManager();
+    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+    if (frag_id == 1) {
+      SearchResultFragment NAME = new SearchResultFragment();
+      fragmentTransaction.replace(R.id.container_cam, NAME);
+    }
+    else {
+      Camera2BasicFragment NAME = new Camera2BasicFragment();
+      fragmentTransaction.replace(R.id.container_cam, NAME);
+    }
+    fragmentTransaction.commit();
   }
 }
