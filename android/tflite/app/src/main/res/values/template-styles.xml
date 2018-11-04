@@ -22,7 +22,11 @@
 
     <style name="Theme.Sample" parent="Theme.Base" />
 
-    <style name="AppTheme" parent="Theme.Sample" />
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar" >
+        <item name="android:colorPrimary">@android:color/background_dark</item>
+        <item name="android:colorPrimaryDark">@android:color/background_light</item>
+        <item name="android:textColorPrimary">@android:color/transparent</item>
+    </style>
     <!-- Widget styling -->
 
     <style name="Widget" />
