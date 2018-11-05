@@ -60,6 +60,8 @@ public class CameraActivity extends Activity {
       }
     });
 
+
+
     searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
       @Override
       public void onFocusChange(View v, boolean hasFocus) {

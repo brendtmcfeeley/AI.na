@@ -127,6 +127,8 @@ public class ImageClassifier {
     return textToShow;
   }
 
+
+
   void applyFilter(){
     int num_labels =  labelList.size();
 
@@ -215,7 +217,7 @@ public class ImageClassifier {
     final int size = sortedLabels.size();
     for (int i = 0; i < size; ++i) {
       Map.Entry<String, Float> label = sortedLabels.poll();
-      textToShow = String.format("\n%s: %4.2f",label.getKey(),label.getValue()) + textToShow;
+      textToShow = String.format("\n%s: %4.2  f",label.getKey(),label.getValue()) + textToShow;
     }
     return textToShow;
   }
