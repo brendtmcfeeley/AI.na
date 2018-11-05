@@ -17,6 +17,8 @@ package com.example.android.flowerai;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +39,8 @@ import java.util.ArrayList;
 
 /** Basic fragments for the Camera. */
 public class SearchResultFragment extends Fragment {
+
+  private static final String TAG = "MyActivity";
 
   @Override
   public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -73,7 +77,9 @@ public class SearchResultFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { //here u can use clickListener
           @Override
           public void onItemClick(final AdapterView<?> parent, View view, final int position, long id) {
-            System.out.println(id);
+            Intent myIntent = new Intent(getActivity(), FirebaseActivity.class);
+            myIntent.putExtra("Plant", plantList.get(position));
+            startActivity(myIntent);
           }
         });
       }
