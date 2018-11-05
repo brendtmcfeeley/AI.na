@@ -23,14 +23,15 @@ def main():
   database = firebase.database()
 
   for i in range(len(plant_name)):
-      data = {
-      "name": plant_name[i],
-      "family": plant_family[i],
-      "common_name": plant_common_name[i],
-      "conservation_status": plant_conservation_status[i],
-      "native_status": plant_native_status[i]
-      }
-      database.child("native_plants").push(data)
+      database.child(plant_common_name[i]).push(
+        {
+        "name": plant_name[i],
+        "family": plant_family[i],
+        "common_name": plant_common_name[i],
+        "conservation_status": plant_conservation_status[i],
+        "native_status": plant_native_status[i]
+        }
+      )
     
 if __name__ == '__main__':
     main()
