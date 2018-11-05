@@ -36,7 +36,7 @@ import java.util.ArrayList;
 
 
 /** Basic fragments for the Camera. */
-public class SearchResultFragment extends Fragment {
+public class  SearchResultFragment extends Fragment {
 
   @Override
   public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
