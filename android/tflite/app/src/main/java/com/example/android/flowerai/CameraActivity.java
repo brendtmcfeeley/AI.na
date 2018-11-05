@@ -13,13 +13,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ==============================================================================*/
 
-package com.example.android.tflitecamerademo;
+package com.example.android.flowerai;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
+import android.util.Log;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -28,6 +29,7 @@ import android.widget.TextView;
 
 /** Main {@code Activity} class for the Camera app. */
 public class CameraActivity extends Activity {
+    private static final String TAG = "CameraActivity";
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
