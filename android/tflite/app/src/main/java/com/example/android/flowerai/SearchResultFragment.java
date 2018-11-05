@@ -45,7 +45,6 @@ public class SearchResultFragment extends Fragment {
   @Override
   public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-
     FirebaseDatabase mFirebaseDatabase;
     DatabaseReference myRef;
     mFirebaseDatabase = FirebaseDatabase.getInstance();
