@@ -77,7 +77,7 @@ public class SearchResultFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { //here u can use clickListener
           @Override
           public void onItemClick(final AdapterView<?> parent, View view, final int position, long id) {
-            Intent myIntent = new Intent(getActivity(), FirebaseActivity.class);
+            Intent myIntent = new Intent(getActivity(), InfoActivity.class);
             myIntent.putExtra("Plant", plantList.get(position));
             startActivity(myIntent);
           }
