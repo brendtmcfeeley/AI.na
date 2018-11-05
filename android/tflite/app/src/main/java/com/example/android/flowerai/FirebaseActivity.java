@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -28,11 +27,8 @@ public class FirebaseActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase);
 
-
         FirebaseDatabase mFirebaseDatabase;
         DatabaseReference myRef;
-
-
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
 

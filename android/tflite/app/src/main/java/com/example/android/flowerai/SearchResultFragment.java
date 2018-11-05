@@ -15,63 +15,77 @@ limitations under the License.
 
 package com.example.android.flowerai;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
 import android.app.Fragment;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.res.Configuration;
-import android.graphics.Bitmap;
-import android.graphics.ImageFormat;
-import android.graphics.Matrix;
-import android.graphics.Point;
-import android.graphics.RectF;
-import android.graphics.SurfaceTexture;
-import android.hardware.camera2.CameraAccessException;
-import android.hardware.camera2.CameraCaptureSession;
-import android.hardware.camera2.CameraCharacteristics;
-import android.hardware.camera2.CameraDevice;
-import android.hardware.camera2.CameraManager;
-import android.hardware.camera2.CaptureRequest;
-import android.hardware.camera2.CaptureResult;
-import android.hardware.camera2.TotalCaptureResult;
-import android.hardware.camera2.params.StreamConfigurationMap;
-import android.media.ImageReader;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.HandlerThread;
-import android.support.annotation.NonNull;
-import android.support.v13.app.FragmentCompat;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
-import android.util.Size;
 import android.view.LayoutInflater;
-import android.view.Surface;
-import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import java.io.IOException;
+import android.support.annotation.NonNull;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.concurrent.Semaphore;
-import java.util.concurrent.TimeUnit;
+
 
 /** Basic fragments for the Camera. */
 public class SearchResultFragment extends Fragment {
 
   @Override
-  public View onCreateView(
-          LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+  public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    FirebaseDatabase mFirebaseDatabase;
+    DatabaseReference myRef;
+    mFirebaseDatabase = FirebaseDatabase.getInstance();
+    myRef = mFirebaseDatabase.getReference();
+
+    ArrayList<String> nameList = new ArrayList<>();
+
+    myRef.addValueEventListener(new ValueEventListener() {
+      @Override
+      public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+        for (DataSnapshot ds : dataSnapshot.getChildren()) {
+          String nameValue = String.valueOf(ds.getKey());
+
+          nameList.add(nameValue);
+
+        }
+
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                container.getContext(),
+                android.R.layout.simple_selectable_list_item,
+                nameList);
+
+        ListView listView = getView().findViewById(R.id.listview);
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { //here u can use clickListener
+          @Override
+          public void onItemClick(final AdapterView<?> parent, View view, final int position, long id) {
+            view.setSelected(true);
+          }
+        });
+      }
+
+      @Override
+      public void onCancelled(@NonNull DatabaseError databaseError) {
+
+      }
+    });
+
+
+
     return inflater.inflate(R.layout.fragment_search_result, container, false);
   }
+
+
 }
