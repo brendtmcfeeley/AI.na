@@ -568,7 +568,7 @@ public class Camera2BasicFragment extends Fragment
       SurfaceTexture texture = textureView.getSurfaceTexture();
       assert texture != null;
 
-      // We configure the size of default buffer to be the size of camera preview we want.
+      // We configure the size of defaultImage buffer to be the size of camera preview we want.
       texture.setDefaultBufferSize(previewSize.getWidth(), previewSize.getHeight());
 
       // This is the output Surface we need to start preview.

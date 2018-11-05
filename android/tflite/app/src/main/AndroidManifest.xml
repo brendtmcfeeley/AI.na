@@ -36,7 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.flowerai.FirebaseActivity"></activity>
+        <activity android:name="com.example.android.flowerai.InfoActivity"></activity>
     </application>
 
 </manifest>
