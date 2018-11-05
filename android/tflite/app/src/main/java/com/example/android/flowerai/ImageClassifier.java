@@ -53,7 +53,6 @@ public class ImageClassifier {
 
   /** Dimensions of inputs. */
   private static final int DIM_BATCH_SIZE = 1;
-
   private static final int DIM_PIXEL_SIZE = 3;
 
   static final int DIM_IMG_SIZE_X = 224;
