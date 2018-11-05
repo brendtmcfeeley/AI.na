@@ -48,6 +48,7 @@ public class SearchResultFragment extends Fragment {
     myRef = mFirebaseDatabase.getReference();
 
     ArrayList<String> nameList = new ArrayList<>();
+    ArrayList<String> List = new ArrayList<>();
 
     myRef.addValueEventListener(new ValueEventListener() {
       @Override
