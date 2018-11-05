@@ -3,7 +3,10 @@ package com.example.android.flowerai;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -18,54 +21,55 @@ import java.util.ArrayList;
  * Main {@code Activity} class for the Camera app.
  */
 public class FirebaseActivity extends Activity {
-//    private static final String TAG = "FirebaseActivity";
-//
-//    // Firebase data stuff
-//    private FirebaseDatabase mFirebaseDatabase;
-//    private DatabaseReference myRef;
-
-    String[] test = {"test1", "test2", "test3"};
-
-
+    private static final String TAG = "FirebaseActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firebase);
 
-//        mFirebaseDatabase = FirebaseDatabase.getInstance();
-//        myRef = mFirebaseDatabase.getReference();
 
-//        myRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+        FirebaseDatabase mFirebaseDatabase;
+        DatabaseReference myRef;
 
-//                ArrayList<String> nameList = new ArrayList<>();
-//
 
-//                for(DataSnapshot ds : dataSnapshot.getChildren()) {
-//                    String nameValue = ds.child("name").getValue(String.class);
-//
-//                    nameList.add(nameValue);
-//
-//                }
-//                String[] nameArray = new String[nameList.size()];
-//                nameArray = nameList.toArray(nameArray);
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
+        myRef = mFirebaseDatabase.getReference();
 
-        ArrayAdapter adapter = new ArrayAdapter<>(
-                this,
-                R.layout.activity_firebase,
-                test);
+        ArrayList<String> nameList = new ArrayList<>();
 
-        ListView listView = findViewById(R.id.listview);
-        listView.setAdapter(adapter);
-//            }
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError databaseError) {
-//
-//            }
-//        });
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                    String nameValue = String.valueOf(ds.getKey());
+
+                    nameList.add(nameValue);
+
+                }
+
+                final ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                        FirebaseActivity.this,
+                        android.R.layout.simple_selectable_list_item,
+                        nameList);
+
+                ListView listView = findViewById(R.id.listview);
+                listView.setAdapter(adapter);
+
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { //here u can use clickListener
+                    @Override
+                    public void onItemClick(final AdapterView<?> parent, View view, final int position, long id) {
+                        view.setSelected(true);
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
     }
 }
