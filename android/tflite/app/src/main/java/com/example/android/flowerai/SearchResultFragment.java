@@ -132,7 +132,7 @@ public class SearchResultFragment extends Fragment {
                   String name = String.valueOf(ds.getChildren().iterator().next().child("name").getValue());
                   String nativeStatus = String.valueOf(ds.getChildren().iterator().next().child("native_status").getValue());
                   Plant dataPlant = new Plant(commonName, conservationStatus, family, name, nativeStatus);
-                  nameList.add(commonName);
+//                  nameList.add(commonName);
                   plantList.add(dataPlant);
                 }
 
@@ -149,8 +149,12 @@ public class SearchResultFragment extends Fragment {
                     public void onItemClick(final AdapterView<?> parent, View view, final int position, long id) {
                         view.setSelected(true);
                         Intent myIntent = new Intent(getActivity(), InfoActivity.class);
-                        myIntent.putExtra("Plant", plantList.get(position));
-                        startActivity(myIntent);
+                        for (int i = 0; i < plantList.size(); i++) {
+                            if (nameList.get(position).contains(plantList.get(i).common_name)) {
+                                myIntent.putExtra("Plant", plantList.get(i));
+                                startActivity(myIntent);
+                            }
+                        }
                     }
                 });
             }

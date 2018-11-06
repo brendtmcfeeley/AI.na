@@ -55,9 +55,14 @@ public class CameraResultFragment extends Fragment {
         FirebaseDatabase mFirebaseDatabase;
         DatabaseReference myRef;
         ArrayList<Plant> plantList = new ArrayList<>();
+        ArrayList<String> plantNamePercent = new ArrayList<>();
 
         plant_names = reverseArray(getArguments().getStringArray("plant_names"));
         plant_pcts = reverseArray(getArguments().getStringArray("plant_pct"));
+
+        for(int i = 0; i < plant_names.length; i++) {
+            plantNamePercent.add(plant_pcts[i] + "% Possibility: " + plant_names[i]);
+        }
 
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
@@ -78,10 +83,10 @@ public class CameraResultFragment extends Fragment {
             public void onCancelled(@NonNull DatabaseError databaseError) { }
         });
 
-        final ArrayAdapter adapter = new ArrayAdapter<>(
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 container.getContext(),
                 android.R.layout.simple_list_item_1,
-                plant_names);
+                plantNamePercent);
 
         View view = inflater.inflate(R.layout.fragment_camera_result, container, false);
         ListView listView = view.findViewById(R.id.camera_result_list);
@@ -94,7 +99,6 @@ public class CameraResultFragment extends Fragment {
                     if (plant_names[position].contains(plantList.get(i).common_name)) {
                         myIntent.putExtra("Plant", plantList.get(i));
                         startActivity(myIntent);
-                        break;
                     }
                 }
             }
