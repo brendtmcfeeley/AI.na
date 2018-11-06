@@ -54,7 +54,6 @@ public class CameraActivity extends Activity {
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-//        SearchView searchView = findViewById(R.id.action_search);
         TextView textView = findViewById(R.id.search_text);
         ImageButton imageButton = findViewById(R.id.imageButton2);
         toolbar.bringToFront();
