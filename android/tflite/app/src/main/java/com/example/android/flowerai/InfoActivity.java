@@ -22,9 +22,6 @@ public class InfoActivity extends Activity {
         Bundle data = getIntent().getExtras();
         Plant plant = data.getParcelable("Plant");
 
-
-
-
         // TextViews
         TextView commonNameTV = findViewById(R.id.cNameTextView);
         TextView sciNameTV = findViewById(R.id.sciNameTextView);
