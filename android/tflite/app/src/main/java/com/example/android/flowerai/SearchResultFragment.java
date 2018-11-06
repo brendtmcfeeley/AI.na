@@ -30,7 +30,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -45,24 +44,30 @@ public class SearchResultFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Crates the reference to our Firebase database
         FirebaseDatabase myFirebaseDatabase;
         DatabaseReference myRef;
         myFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = myFirebaseDatabase.getReference();
 
+        // The list that we will save the resulting flowers into
         ArrayList<String> nameList = new ArrayList<>();
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
+                // Captures our bundle arguments in a frag args ArrayList
                 ArrayList<String> fragArgs = new ArrayList<>();
 
+                // If our fragArgs is null, throw a NullPointerException
                 try {
                     fragArgs = getArguments().getStringArrayList("databaseArgs");
                 } catch (NullPointerException npe) {
                 }
 
+                // If we are simply clicking on the searchable object from the home screen
+                // Then just simply load all the data from the database
                 if (fragArgs.get(1).equals("focusChange")) {
                     nameList.clear();
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
@@ -71,14 +76,20 @@ public class SearchResultFragment extends Fragment {
                         nameList.add(nameValue);
                     }
                 }
+                // If we are submitting text, look if the dataSnapshot child is equal to null, meaning that there is
+                // no such item in the database with the string we are looking for
                 else if (fragArgs.get(1).equals("textSubmit")){
                     String nameValue;
 
+                    // We can't find the child with the queried string
                     if (dataSnapshot.child(fragArgs.get(0)).getValue() == null) {
                         nameValue = "Sorry, could not find the plant : " + fragArgs.get(0);
                         nameList.clear();
                         nameList.add(nameValue);
-                    } else {
+                    }
+                    // If not, load all the data in the database that contain a substring
+                    // eg : User input "a" loads all items that contain "a"
+                    else {
                         nameList.clear();
                         for (DataSnapshot ds : dataSnapshot.getChildren()) {
                             nameValue = String.valueOf(ds.getKey());
@@ -89,6 +100,10 @@ public class SearchResultFragment extends Fragment {
                         }
                     }
                 }
+                // Else we are doing a text typing update
+                // Same rules of the textSubmitting
+                // This takes the entire database snapshot and checks if each value contains the substring
+                // If it does not find any values with substrings, then it returns that it could not find any item
                 else {
                     String nameValue;
                     nameList.clear();
