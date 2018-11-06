@@ -49,6 +49,7 @@ public class CameraActivity extends Activity {
                     .commit();
         }
 
+        // Creates new searchable view and searchle object to allow user to type data into
         SearchView searchView = (SearchView) findViewById(R.id.search);
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
@@ -72,7 +73,11 @@ public class CameraActivity extends Activity {
             }
         });
 
+
+        //Query listener that triggers when a user enters input from their keyboard
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            // Grabs the user input and changes the fragment by passing in its value when they click submit
             @Override
             public boolean onQueryTextSubmit(String query) {
                 textView.setVisibility(View.INVISIBLE);
@@ -81,6 +86,7 @@ public class CameraActivity extends Activity {
                 return true;
             }
 
+            // Grabs the user input and changes the fragment by passing in its value when they continuously type
             @Override
             public boolean onQueryTextChange(String query) {
                 textView.setVisibility(View.INVISIBLE);
@@ -90,7 +96,10 @@ public class CameraActivity extends Activity {
             }
         });
 
+        // Query listener when users initially click on the search bar
         searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
+
+            // Automatically loads all the data by default or changes back to the old fragment screen depending on where the user is
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
@@ -108,18 +117,27 @@ public class CameraActivity extends Activity {
         });
     }
 
+    /**
+        Changes the fragment the user is looking at
+        @param frag_id (int) - Which fragment to switch to, 1 for a searchable fragment or 2 for the camera view
+        @param query (String) - The user input that we queried for
+        @param typeChange (String) - Identifies what type of fragment change we should be using
+     */
     private void changeFragment(int frag_id, String query, String typeChange) {
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
+        // Creates an array list of the user input and the fragment trasition typE
         ArrayList<String> fragmentArgs = new ArrayList<>();
         fragmentArgs.add(query);
         fragmentArgs.add(typeChange);
 
+        // Creates the bundle so we can pass arguments into the fragment
         Bundle bundle = new Bundle();
         bundle.putStringArrayList("databaseArgs", fragmentArgs);
 
         if (frag_id == 1) {
+            // Links the newly create fragment with the bundle
             SearchResultFragment NAME = new SearchResultFragment();
             NAME.setArguments(bundle);
             fragmentTransaction.replace(R.id.container_cam, NAME);
@@ -127,6 +145,7 @@ public class CameraActivity extends Activity {
             Camera2BasicFragment NAME = new Camera2BasicFragment();
             fragmentTransaction.replace(R.id.container_cam, NAME);
         }
+        // Commits the fragment change
         fragmentTransaction.commit();
     }
 }
