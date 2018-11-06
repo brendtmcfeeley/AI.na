@@ -19,6 +19,9 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.app.SearchManager;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.support.v7.widget.SearchView;
@@ -27,70 +30,104 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-/** Main {@code Activity} class for the Camera app. */
+import java.util.ArrayList;
+
+/**
+ * Main {@code Activity} class for the Camera app.
+ */
 public class CameraActivity extends Activity {
     private static final String TAG = "CameraActivity";
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_camera);
-    if (null == savedInstanceState) {
-      getFragmentManager()
-          .beginTransaction()
-          .replace(R.id.container_cam, Camera2BasicFragment.newInstance())
-          .commit();
-    }
-
-    Toolbar toolbar = findViewById(R.id.toolbar);
-    SearchView searchView = findViewById(R.id.search);
-    TextView textView = findViewById(R.id.search_text);
-    ImageButton imageButton = findViewById(R.id.imageButton2);
-    toolbar.bringToFront();
-
-    textView.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        searchView.setIconified(false);
-      }
-    });
-
-    imageButton.setOnClickListener(new View.OnClickListener(){
-      @Override
-      public void onClick(View view) {
-        searchView.setIconified(true);
-      }
-    });
-
-    searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
-      @Override
-      public void onFocusChange(View v, boolean hasFocus) {
-        if (hasFocus) {
-          // searchView expanded
-          textView.setVisibility(View.INVISIBLE);
-          imageButton.setVisibility(View.VISIBLE);
-          changeFragment(1);
-        } else {
-          // searchView not expanded
-          textView.setVisibility(View.VISIBLE);
-          imageButton.setVisibility(View.GONE);
-          changeFragment(2);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_camera);
+        if (null == savedInstanceState) {
+            getFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.container_cam, Camera2BasicFragment.newInstance())
+                    .commit();
         }
-      }
-    });
-  }
 
-  private void changeFragment(int frag_id){
-    FragmentManager fragmentManager = getFragmentManager();
-    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-    if (frag_id == 1) {
-      SearchResultFragment NAME = new SearchResultFragment();
-      fragmentTransaction.replace(R.id.container_cam, NAME);
+        SearchView searchView = (SearchView) findViewById(R.id.search);
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+//        SearchView searchView = findViewById(R.id.action_search);
+        TextView textView = findViewById(R.id.search_text);
+        ImageButton imageButton = findViewById(R.id.imageButton2);
+        toolbar.bringToFront();
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                searchView.setIconified(false);
+            }
+        });
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                searchView.setIconified(true);
+            }
+        });
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                textView.setVisibility(View.INVISIBLE);
+                imageButton.setVisibility(View.VISIBLE);
+                changeFragment(1, query, "textSubmit");
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                textView.setVisibility(View.INVISIBLE);
+                imageButton.setVisibility(View.VISIBLE);
+                changeFragment(1, query, "textChange");
+                return true;
+            }
+        });
+
+        searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    // searchView expanded
+                    textView.setVisibility(View.INVISIBLE);
+                    imageButton.setVisibility(View.VISIBLE);
+                    changeFragment(1, null, "focusChange");
+                } else {
+                    // searchView not expanded
+                    textView.setVisibility(View.VISIBLE);
+                    imageButton.setVisibility(View.GONE);
+                    changeFragment(2, null, "focusChange");
+                }
+            }
+        });
     }
-    else {
-      Camera2BasicFragment NAME = new Camera2BasicFragment();
-      fragmentTransaction.replace(R.id.container_cam, NAME);
+
+    private void changeFragment(int frag_id, String query, String typeChange) {
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        ArrayList<String> fragmentArgs = new ArrayList<>();
+        fragmentArgs.add(query);
+        fragmentArgs.add(typeChange);
+
+        Bundle bundle = new Bundle();
+        bundle.putStringArrayList("databaseArgs", fragmentArgs);
+
+        if (frag_id == 1) {
+            SearchResultFragment NAME = new SearchResultFragment();
+            NAME.setArguments(bundle);
+            fragmentTransaction.replace(R.id.container_cam, NAME);
+        } else {
+            Camera2BasicFragment NAME = new Camera2BasicFragment();
+            fragmentTransaction.replace(R.id.container_cam, NAME);
+        }
+        fragmentTransaction.commit();
     }
-    fragmentTransaction.commit();
-  }
 }
