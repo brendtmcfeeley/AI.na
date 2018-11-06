@@ -73,13 +73,13 @@ public class CameraActivity extends Activity
                 searchView.setIconified(true);
             }
         });
-        
-        resultBackButton.setOnClickListener(new View.OnClickListener(){
-          @Override
-          public void onClick(View view) {
-              changeFragment(2, null, "resultBack");
-          }
-    });
+
+        resultBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeFragment(2);
+            }
+        });
 
 
         //Query listener that triggers when a user enters input from their keyboard
@@ -126,10 +126,11 @@ public class CameraActivity extends Activity
     }
 
     /**
-        Changes the fragment the user is looking at
-        @param frag_id (int) - Which fragment to switch to, 1 for a searchable fragment or 2 for the camera view
-        @param query (String) - The user input that we queried for
-        @param typeChange (String) - Identifies what type of fragment change we should be using
+     * Changes the fragment the user is looking at
+     *
+     * @param frag_id    (int) - Which fragment to switch to, 1 for a searchable fragment or 2 for the camera view
+     * @param query      (String) - The user input that we queried for
+     * @param typeChange (String) - Identifies what type of fragment change we should be using
      */
     private void changeFragment(int frag_id, String query, String typeChange) {
         FragmentManager fragmentManager = getFragmentManager();
@@ -155,47 +156,44 @@ public class CameraActivity extends Activity
         }
         // Commits the fragment change
         fragmentTransaction.commit();
-      }
-    });
-  }
+    }
 
-  private void changeFragment(int frag_id){
-      List<Map.Entry<String, Float>> labels = new ArrayList<Map.Entry<String,Float>>();
-      changeFragment(frag_id, labels);
-  }
+    private void changeFragment(int frag_id) {
+        List<Map.Entry<String, Float>> labels = new ArrayList<Map.Entry<String, Float>>();
+        changeFragment(frag_id, labels);
+    }
 
-  private void changeFragment(int frag_id, List<Map.Entry<String, Float>> label){
-      TextView textView = findViewById(R.id.search_text);
-      ImageButton imageButton = findViewById(R.id.imageButton2);
-      ImageButton resultBackButton = findViewById(R.id.resultBack);
-      SearchView searchView = findViewById(R.id.search);
+    private void changeFragment(int frag_id, List<Map.Entry<String, Float>> label) {
+        TextView textView = findViewById(R.id.search_text);
+        ImageButton imageButton = findViewById(R.id.imageButton2);
+        ImageButton resultBackButton = findViewById(R.id.resultBack);
+        SearchView searchView = findViewById(R.id.search);
 
-      FragmentManager fragmentManager = getFragmentManager();
-      FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-      if (frag_id == 1) {
-          SearchResultFragment NAME = new SearchResultFragment();
-          textView.setVisibility(View.INVISIBLE);
-          imageButton.setVisibility(View.VISIBLE);
-          fragmentTransaction.replace(R.id.container_cam, NAME);
-      }
-      else if(frag_id == 2) {
-          Camera2BasicFragment NAME = new Camera2BasicFragment();
-          textView.setText("Plant Search");
-          textView.setVisibility(View.VISIBLE);
-          imageButton.setVisibility(View.GONE);
-          resultBackButton.setVisibility(View.GONE);
-          searchView.setVisibility(View.VISIBLE);
-          fragmentTransaction.replace(R.id.container_cam, NAME);
-      }
-      else if (frag_id == 3) {
-          CameraResultFragment NAME = CameraResultFragment.newInstance(label);
-          textView.setText("Camera Result");
-          resultBackButton.setVisibility(View.VISIBLE);
-          searchView.setVisibility(View.GONE);
-          fragmentTransaction.replace(R.id.container_cam, NAME);
-      }
-      fragmentTransaction.commit();
-  }
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        if (frag_id == 1) {
+            SearchResultFragment NAME = new SearchResultFragment();
+            textView.setVisibility(View.INVISIBLE);
+            imageButton.setVisibility(View.VISIBLE);
+            fragmentTransaction.replace(R.id.container_cam, NAME);
+        } else if (frag_id == 2) {
+            Camera2BasicFragment NAME = new Camera2BasicFragment();
+            textView.setText("Plant Search");
+            textView.setVisibility(View.VISIBLE);
+            imageButton.setVisibility(View.GONE);
+            resultBackButton.setVisibility(View.GONE);
+            searchView.setVisibility(View.VISIBLE);
+            fragmentTransaction.replace(R.id.container_cam, NAME);
+        } else if (frag_id == 3) {
+            CameraResultFragment NAME = CameraResultFragment.newInstance(label);
+            textView.setText("Camera Result");
+            resultBackButton.setVisibility(View.VISIBLE);
+            searchView.setVisibility(View.GONE);
+            fragmentTransaction.replace(R.id.container_cam, NAME);
+        }
+        fragmentTransaction.commit();
+    }
+
     public void onProcess(List<Map.Entry<String, Float>> label) {
         changeFragment(3, label);
     }
