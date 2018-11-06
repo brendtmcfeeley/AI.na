@@ -132,11 +132,6 @@ public class ImageClassifier {
       Log.e(TAG, "Image classifier has not been initialized; Skipped.");
       return null;
     }
-    convertBitmapToByteBuffer(bitmap);
-    tflite.run(imgData, labelProbArray);
-
-    // smooth the results
-    applyFilter();
 
     // print the results
     List<Map.Entry<String, Float>> labels = getTopKLabels();
@@ -245,11 +240,9 @@ public class ImageClassifier {
         sortedLabels.poll();
       }
     }
-    //String textToShow = "";
     final int size = sortedLabels.size();
     for (int i = 0; i < size; ++i) {
       labels.add(sortedLabels.poll());
-      //textToShow = String.format("\n%s: %4.2f",label.getKey(),label.getValue()) + textToShow;
     }
     return labels;
   }
