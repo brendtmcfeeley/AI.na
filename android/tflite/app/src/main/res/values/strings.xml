@@ -34,4 +34,6 @@
     <string name="familyLabel">FAMILY:</string>
     <string name="nativeLabel">NATIVITY:</string>
     <string name="reportSightingValue">Report Sighting</string>
+    <string name="yesNative">E</string>
+    <string name="noNative">N</string>
 </resources>

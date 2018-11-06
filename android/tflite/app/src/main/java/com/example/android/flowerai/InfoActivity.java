@@ -27,6 +27,7 @@ public class InfoActivity extends Activity {
         TextView statusTV = findViewById(R.id.statusTextView);
         TextView familyTV = findViewById(R.id.familyTextView);
         TextView nativeTV = findViewById(R.id.nativeTextView);
+        TextView nativeCrestTV = findViewById(R.id.nativeCrest);
         ImageView plantIV = findViewById(R.id.flowerImage);
         ImageView imageCrestIV = findViewById(R.id.imageCrest);
 
@@ -90,6 +91,19 @@ public class InfoActivity extends Activity {
                 imageCrestIV.setImageResource(R.drawable.circle_green);
                 break;
 
+
+        }
+
+        switch(plant.native_status.toUpperCase()) {
+            case "ENDEMIC":
+                nativeCrestTV.setText(R.string.yesNative);
+                break;
+            case "NON-NATIVE":
+                nativeCrestTV.setText(R.string.noNative);
+                break;
+            default:
+                nativeCrestTV.setText("?");
+                break;
 
         }
 
