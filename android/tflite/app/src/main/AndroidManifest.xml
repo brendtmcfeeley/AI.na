@@ -44,7 +44,7 @@
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
-        <activity android:name="com.example.android.flowerai.FirebaseActivity"></activity>
+        <activity android:name="com.example.android.flowerai.InfoActivity"></activity>
     </application>
 
 </manifest>

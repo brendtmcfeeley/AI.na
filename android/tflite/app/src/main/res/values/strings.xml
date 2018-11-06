@@ -21,6 +21,19 @@
     <string name="toggle_turn_on">NN:On</string>
     <string name="toggle_turn_off">NN:Off</string>
     <string name="toggle">Use NNAPI</string>
-    <string name="search_text">Search Flowers</string>
-    <string name="search_back">Search Back</string>
+    <string name="search_text">Search Plants</string>
+    <string name="search_back">Search back</string>
+    <string name="commonNameValue" >DEFAULT</string>
+    <string name="sciNameValue" >DEFAULT</string>
+    <string name="statusValue" >default</string>
+    <string name="familyValue" >default</string>
+    <string name="nativeValue" >default</string>
+    <string name="flowerImageDesc">Image for flower</string>
+    <string name="test">Not Default</string>
+    <string name="statusLabel">CONSERVATION STATUS:</string>
+    <string name="familyLabel">FAMILY:</string>
+    <string name="nativeLabel">NATIVITY:</string>
+    <string name="reportSightingValue">Report Sighting</string>
+    <string name="yesNative">E</string>
+    <string name="noNative">N</string>
 </resources>

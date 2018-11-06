@@ -28,11 +28,14 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Main {@code Activity} class for the Camera app.
  */
-public class CameraActivity extends Activity {
+public class CameraActivity extends Activity
+        implements Camera2BasicFragment.Camera2BasicFragmentSelectedListener {
     private static final String TAG = "CameraActivity";
 
     @Override
@@ -54,6 +57,7 @@ public class CameraActivity extends Activity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         TextView textView = findViewById(R.id.search_text);
         ImageButton imageButton = findViewById(R.id.imageButton2);
+        ImageButton resultBackButton = findViewById(R.id.resultBack);
         toolbar.bringToFront();
 
         textView.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +73,13 @@ public class CameraActivity extends Activity {
                 searchView.setIconified(true);
             }
         });
+        
+        resultBackButton.setOnClickListener(new View.OnClickListener(){
+          @Override
+          public void onClick(View view) {
+              changeFragment(2, null, "resultBack");
+          }
+    });
 
 
         //Query listener that triggers when a user enters input from their keyboard
@@ -144,5 +155,48 @@ public class CameraActivity extends Activity {
         }
         // Commits the fragment change
         fragmentTransaction.commit();
+      }
+    });
+  }
+
+  private void changeFragment(int frag_id){
+      List<Map.Entry<String, Float>> labels = new ArrayList<Map.Entry<String,Float>>();
+      changeFragment(frag_id, labels);
+  }
+
+  private void changeFragment(int frag_id, List<Map.Entry<String, Float>> label){
+      TextView textView = findViewById(R.id.search_text);
+      ImageButton imageButton = findViewById(R.id.imageButton2);
+      ImageButton resultBackButton = findViewById(R.id.resultBack);
+      SearchView searchView = findViewById(R.id.search);
+
+      FragmentManager fragmentManager = getFragmentManager();
+      FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+      if (frag_id == 1) {
+          SearchResultFragment NAME = new SearchResultFragment();
+          textView.setVisibility(View.INVISIBLE);
+          imageButton.setVisibility(View.VISIBLE);
+          fragmentTransaction.replace(R.id.container_cam, NAME);
+      }
+      else if(frag_id == 2) {
+          Camera2BasicFragment NAME = new Camera2BasicFragment();
+          textView.setText("Plant Search");
+          textView.setVisibility(View.VISIBLE);
+          imageButton.setVisibility(View.GONE);
+          resultBackButton.setVisibility(View.GONE);
+          searchView.setVisibility(View.VISIBLE);
+          fragmentTransaction.replace(R.id.container_cam, NAME);
+      }
+      else if (frag_id == 3) {
+          CameraResultFragment NAME = CameraResultFragment.newInstance(label);
+          textView.setText("Camera Result");
+          resultBackButton.setVisibility(View.VISIBLE);
+          searchView.setVisibility(View.GONE);
+          fragmentTransaction.replace(R.id.container_cam, NAME);
+      }
+      fragmentTransaction.commit();
+  }
+    public void onProcess(List<Map.Entry<String, Float>> label) {
+        changeFragment(3, label);
     }
 }

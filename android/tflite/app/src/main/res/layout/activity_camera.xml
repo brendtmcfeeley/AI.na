@@ -38,6 +38,16 @@
             android:src="@drawable/ic_close"
             android:visibility="gone" />
 
+        <ImageButton
+            android:id="@+id/resultBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/search_back"
+            android:padding="10dp"
+            android:src="@drawable/ic_close"
+            android:visibility="gone" />
+
         <android.support.v7.widget.SearchView
             android:id="@+id/search"
             android:layout_width="wrap_content"
@@ -64,6 +74,8 @@
             android:textSize="24sp" />
 
     </android.support.v7.widget.Toolbar>
+
+
 
     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"

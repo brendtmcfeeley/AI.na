@@ -54,6 +54,7 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.io.IOException;
@@ -62,6 +63,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
@@ -281,7 +283,48 @@ public class Camera2BasicFragment extends Fragment
   @Override
   public View onCreateView(
       LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-    return inflater.inflate(R.layout.fragment_camera2_basic, container, false);
+
+    View view = inflater.inflate(R.layout.fragment_camera2_basic, container, false);
+    Button button = view.findViewById(R.id.button3);
+
+    button.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        if (classifier == null || getActivity() == null || cameraDevice == null) {
+          showToast("Uninitialized Classifier or invalid context.");
+          return;
+        }
+        Bitmap bitmap =
+                textureView.getBitmap(ImageClassifier.DIM_IMG_SIZE_X, ImageClassifier.DIM_IMG_SIZE_Y);
+
+        List<Map.Entry<String, Float>> labels = classifier.getProcessList(bitmap);
+        bitmap.recycle();
+        //showToast(textToShow);
+        mCallback.onProcess(labels);
+      }
+    });
+    return view;
+  }
+
+  Camera2BasicFragmentSelectedListener mCallback;
+
+  // Container Activity must implement this interface
+  public interface Camera2BasicFragmentSelectedListener {
+    public void onProcess(List<Map.Entry<String, Float>> labels);
+  }
+
+  @Override
+  public void onAttach(Activity activity) {
+    super.onAttach(activity);
+
+    // This makes sure that the container activity has implemented
+    // the callback interface. If not, it throws an exception
+    try {
+      mCallback = (Camera2BasicFragmentSelectedListener) activity;
+    } catch (ClassCastException e) {
+      throw new ClassCastException(activity.toString()
+              + " must implement OnHeadlineSelectedListener");
+    }
   }
 
   /** Connect the buttons to their event handler. */
@@ -459,6 +502,7 @@ public class Camera2BasicFragment extends Fragment
     }
   }
 
+
   /** Opens the camera specified by {@link Camera2BasicFragment#cameraId}. */
   private void openCamera(int width, int height) {
     if (!checkedPermissions && !allPermissionsGranted()) {
@@ -568,7 +612,7 @@ public class Camera2BasicFragment extends Fragment
       SurfaceTexture texture = textureView.getSurfaceTexture();
       assert texture != null;
 
-      // We configure the size of default buffer to be the size of camera preview we want.
+      // We configure the size of defaultImage buffer to be the size of camera preview we want.
       texture.setDefaultBufferSize(previewSize.getWidth(), previewSize.getHeight());
 
       // This is the output Surface we need to start preview.

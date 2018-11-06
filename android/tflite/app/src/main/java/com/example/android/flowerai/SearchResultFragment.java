@@ -17,6 +17,8 @@ package com.example.android.flowerai;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,7 +41,8 @@ import java.util.ArrayList;
  * Basic fragments for the Camera.
  */
 public class SearchResultFragment extends Fragment {
-
+    private static final String TAG = "MyActivity";
+  
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +55,7 @@ public class SearchResultFragment extends Fragment {
 
         // The list that we will save the resulting flowers into
         ArrayList<String> nameList = new ArrayList<>();
+        ArrayList<Plant> plantList = new ArrayList<>();
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -121,6 +125,17 @@ public class SearchResultFragment extends Fragment {
                         nameList.add(nameValue);
                     }
                 }
+              
+                for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                  String commonName = String.valueOf(ds.getChildren().iterator().next().child("common_name").getValue());
+                  String conservationStatus = String.valueOf(ds.getChildren().iterator().next().child("conservation_status").getValue());
+                  String family = String.valueOf(ds.getChildren().iterator().next().child("family").getValue());
+                  String name = String.valueOf(ds.getChildren().iterator().next().child("name").getValue());
+                  String nativeStatus = String.valueOf(ds.getChildren().iterator().next().child("native_status").getValue());
+                  Plant dataPlant = new Plant(commonName, conservationStatus, family, name, nativeStatus);
+                  nameList.add(commonName);
+                  plantList.add(dataPlant);
+                }
 
 
                 final ArrayAdapter<String> adapter = new ArrayAdapter<String>(
@@ -130,11 +145,13 @@ public class SearchResultFragment extends Fragment {
 
                 ListView listView = getView().findViewById(R.id.listview);
                 listView.setAdapter(adapter);
-
                 listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { //here u can use clickListener
                     @Override
                     public void onItemClick(final AdapterView<?> parent, View view, final int position, long id) {
                         view.setSelected(true);
+                        Intent myIntent = new Intent(getActivity(), InfoActivity.class);
+                        myIntent.putExtra("Plant", plantList.get(position));
+                        startActivity(myIntent);
                     }
                 });
             }
@@ -148,6 +165,4 @@ public class SearchResultFragment extends Fragment {
 
         return inflater.inflate(R.layout.fragment_search_result, container, false);
     }
-
-
 }

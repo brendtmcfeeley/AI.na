@@ -30,6 +30,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.AbstractMap;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -53,7 +54,6 @@ public class ImageClassifier {
 
   /** Dimensions of inputs. */
   private static final int DIM_BATCH_SIZE = 1;
-
   private static final int DIM_PIXEL_SIZE = 3;
 
   static final int DIM_IMG_SIZE_X = 224;
@@ -125,6 +125,22 @@ public class ImageClassifier {
     String textToShow = printTopKLabels();
     textToShow = Long.toString(endTime - startTime) + "ms" + textToShow;
     return textToShow;
+  }
+
+  List<Map.Entry<String, Float>> getProcessList(Bitmap bitmap) {
+    if (tflite == null) {
+      Log.e(TAG, "Image classifier has not been initialized; Skipped.");
+      return null;
+    }
+    convertBitmapToByteBuffer(bitmap);
+    tflite.run(imgData, labelProbArray);
+
+    // smooth the results
+    applyFilter();
+
+    // print the results
+    List<Map.Entry<String, Float>> labels = getTopKLabels();
+    return labels;
   }
 
   void applyFilter(){
@@ -219,4 +235,23 @@ public class ImageClassifier {
     }
     return textToShow;
   }
+
+  private List<Map.Entry<String, Float>> getTopKLabels() {
+    List<Map.Entry<String, Float>> labels = new ArrayList<Map.Entry<String,Float>>();
+    for (int i = 0; i < labelList.size(); ++i) {
+      sortedLabels.add(
+              new AbstractMap.SimpleEntry<>(labelList.get(i), labelProbArray[0][i]));
+      if (sortedLabels.size() > RESULTS_TO_SHOW) {
+        sortedLabels.poll();
+      }
+    }
+    //String textToShow = "";
+    final int size = sortedLabels.size();
+    for (int i = 0; i < size; ++i) {
+      labels.add(sortedLabels.poll());
+      //textToShow = String.format("\n%s: %4.2f",label.getKey(),label.getValue()) + textToShow;
+    }
+    return labels;
+  }
+
 }
