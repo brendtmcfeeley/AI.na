@@ -47,7 +47,9 @@
             android:queryBackground="@android:color/white"
             app:goIcon="@drawable/ic_search"
             app:queryHint="@string/search_text"
-            app:searchIcon="@drawable/ic_search" >
+            app:searchIcon="@drawable/ic_search"
+            android:showAsAction="ifRoom|collapseActionView"
+            android:actionViewClass="android.widget.SearchView">
 
         </android.support.v7.widget.SearchView>
 
