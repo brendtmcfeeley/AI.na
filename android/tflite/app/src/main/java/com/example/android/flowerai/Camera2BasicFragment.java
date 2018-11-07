@@ -45,6 +45,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v13.app.FragmentCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
@@ -55,6 +56,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.io.IOException;
@@ -285,7 +287,7 @@ public class Camera2BasicFragment extends Fragment
       LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
     View view = inflater.inflate(R.layout.fragment_camera2_basic, container, false);
-    Button button = view.findViewById(R.id.button3);
+    ImageButton button = view.findViewById(R.id.cameraButton);
 
     button.setOnClickListener(new View.OnClickListener() {
       @Override
