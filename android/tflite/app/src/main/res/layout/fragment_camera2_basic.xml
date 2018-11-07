@@ -33,40 +33,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button3"
+        <ImageButton
+            android:id="@+id/cameraButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Process"
-            app:layout_constraintBottom_toTopOf="@+id/control"
+            android:layout_marginBottom="44dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="process"
+            android:src="@drawable/circle_camera"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <FrameLayout
             android:id="@+id/control"
             android:layout_width="match_parent"
-            android:layout_height="112dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="8dp"
-            android:background="@color/control_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintVertical_bias="0.114">
 
             <TextView
                 android:id="@+id/text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="80dp"
+                android:fontFamily="@font/open_sans"
+                android:paddingLeft="5dp"
                 android:textColor="#FFF"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="16sp"
+                android:textStyle="normal" />
 
         </FrameLayout>
+
     </android.support.constraint.ConstraintLayout>
 
 </RelativeLayout>
