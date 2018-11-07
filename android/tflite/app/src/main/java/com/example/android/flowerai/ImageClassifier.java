@@ -126,7 +126,7 @@ public class ImageClassifier {
     return textToShow;
   }
 
-  List<Map.Entry<String, Float>> getProcessList(Bitmap bitmap) {
+  List<Map.Entry<String, Float>> getProcessList() {
     if (tflite == null) {
       Log.e(TAG, "Image classifier has not been initialized; Skipped.");
       return null;

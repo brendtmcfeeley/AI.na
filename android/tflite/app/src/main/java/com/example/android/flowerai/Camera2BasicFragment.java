@@ -298,11 +298,10 @@ public class Camera2BasicFragment extends Fragment
         }
         Bitmap bitmap =
                 textureView.getBitmap(ImageClassifier.DIM_IMG_SIZE_X, ImageClassifier.DIM_IMG_SIZE_Y);
-
-        List<Map.Entry<String, Float>> labels = classifier.getProcessList(bitmap);
-        bitmap.recycle();
+        List<Map.Entry<String, Float>> labels = classifier.getProcessList();
         //showToast(textToShow);
-        mCallback.onProcess(labels);
+        mCallback.onProcess(labels, bitmap);
+        bitmap.recycle();
       }
     });
     return view;
@@ -312,7 +311,7 @@ public class Camera2BasicFragment extends Fragment
 
   // Container Activity must implement this interface
   public interface Camera2BasicFragmentSelectedListener {
-    public void onProcess(List<Map.Entry<String, Float>> labels);
+    public void onProcess(List<Map.Entry<String, Float>> labels, Bitmap bitmap);
   }
 
   @Override

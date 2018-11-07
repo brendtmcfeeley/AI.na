@@ -20,6 +20,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.app.SearchManager;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
@@ -160,10 +161,11 @@ public class CameraActivity extends Activity
 
     private void changeFragment(int frag_id) {
         List<Map.Entry<String, Float>> labels = new ArrayList<Map.Entry<String, Float>>();
-        changeFragment(frag_id, labels);
+        Bitmap bitmap = null;
+        changeFragment(frag_id, labels, bitmap);
     }
 
-    private void changeFragment(int frag_id, List<Map.Entry<String, Float>> label) {
+    private void changeFragment(int frag_id, List<Map.Entry<String, Float>> label, Bitmap bitmap) {
         TextView textView = findViewById(R.id.search_text);
         ImageButton imageButton = findViewById(R.id.imageButton2);
         ImageButton resultBackButton = findViewById(R.id.resultBack);
@@ -185,7 +187,7 @@ public class CameraActivity extends Activity
             searchView.setVisibility(View.VISIBLE);
             fragmentTransaction.replace(R.id.container_cam, NAME);
         } else if (frag_id == 3) {
-            CameraResultFragment NAME = CameraResultFragment.newInstance(label);
+            CameraResultFragment NAME = CameraResultFragment.newInstance(label, bitmap);
             textView.setText("Camera Result");
             resultBackButton.setVisibility(View.VISIBLE);
             searchView.setVisibility(View.GONE);
@@ -194,7 +196,7 @@ public class CameraActivity extends Activity
         fragmentTransaction.commit();
     }
 
-    public void onProcess(List<Map.Entry<String, Float>> label) {
-        changeFragment(3, label);
+    public void onProcess(List<Map.Entry<String, Float>> label, Bitmap bitmap) {
+        changeFragment(3, label, bitmap);
     }
 }
