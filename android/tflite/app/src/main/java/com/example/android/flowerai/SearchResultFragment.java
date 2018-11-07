@@ -132,14 +132,14 @@ public class SearchResultFragment extends Fragment {
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         nameValue = String.valueOf(ds.getKey());
 
-                        if(fragArgs.get(0).contains("'")) fragArgs.get(0).replace("'", "ʻ");
-                        if (nameValue.toLowerCase().contains(fragArgs.get(0).toLowerCase()) ||
-                                nameValue.toLowerCase().contains(cleanOkina(fragArgs.get(0).toLowerCase())) ||
-                                nameValue.toLowerCase().contains(cleanA(fragArgs.get(0).toLowerCase())) ||
-                                nameValue.toLowerCase().contains(cleanE(fragArgs.get(0).toLowerCase())) ||
-                                nameValue.toLowerCase().contains(cleanI(fragArgs.get(0).toLowerCase())) ||
-                                nameValue.toLowerCase().contains(cleanO(fragArgs.get(0).toLowerCase())) ||
-                                nameValue.toLowerCase().contains(cleanU(fragArgs.get(0).toLowerCase()))) {
+                        String searchVal = fragArgs.get(0).toLowerCase();
+                        if (nameValue.toLowerCase().contains(searchVal) ||
+                                nameValue.toLowerCase().contains(cleanOkina(searchVal)) ||
+                                nameValue.toLowerCase().contains(cleanA(searchVal)) ||
+                                nameValue.toLowerCase().contains(cleanE(searchVal))||
+                                nameValue.toLowerCase().contains(cleanI(searchVal)) ||
+                                nameValue.toLowerCase().contains(cleanO(searchVal)) ||
+                                nameValue.toLowerCase().contains(cleanU(searchVal))) {
                             nameList.add(nameValue);
                         }
                     }
