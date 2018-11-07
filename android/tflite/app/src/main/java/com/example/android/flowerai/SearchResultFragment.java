@@ -35,13 +35,31 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-
 /**
  * Basic fragments for the Camera.
  */
 public class SearchResultFragment extends Fragment {
     private static final String TAG = "MyActivity";
-  
+
+    private String cleanOkina(String dirty){
+        return dirty.replace("'","‘");
+    }
+    private String cleanA(String dirty){
+        return dirty.replace("a","ā");
+    }
+    private String cleanE(String dirty){
+        return dirty.replace("e","ē");
+    }
+    private String cleanI(String dirty){
+        return dirty.replace("i","ī");
+        }
+    private String cleanO(String dirty){
+        return dirty.replace("o","ō");
+    }
+    private String cleanU(String dirty){
+        return dirty.replace("u","ū");
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,7 +132,14 @@ public class SearchResultFragment extends Fragment {
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
                         nameValue = String.valueOf(ds.getKey());
 
-                        if (nameValue.toLowerCase().contains(fragArgs.get(0).toLowerCase())) {
+                        if(fragArgs.get(0).contains("'")) fragArgs.get(0).replace("'", "ʻ");
+                        if (nameValue.toLowerCase().contains(fragArgs.get(0).toLowerCase()) ||
+                                nameValue.toLowerCase().contains(cleanOkina(fragArgs.get(0).toLowerCase())) ||
+                                nameValue.toLowerCase().contains(cleanA(fragArgs.get(0).toLowerCase())) ||
+                                nameValue.toLowerCase().contains(cleanE(fragArgs.get(0).toLowerCase())) ||
+                                nameValue.toLowerCase().contains(cleanI(fragArgs.get(0).toLowerCase())) ||
+                                nameValue.toLowerCase().contains(cleanO(fragArgs.get(0).toLowerCase())) ||
+                                nameValue.toLowerCase().contains(cleanU(fragArgs.get(0).toLowerCase()))) {
                             nameList.add(nameValue);
                         }
                     }

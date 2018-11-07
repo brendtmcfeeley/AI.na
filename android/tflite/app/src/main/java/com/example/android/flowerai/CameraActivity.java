@@ -126,6 +126,7 @@ public class CameraActivity extends Activity
         });
     }
 
+
     /**
      * Changes the fragment the user is looking at
      *
