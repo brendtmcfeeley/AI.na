@@ -70,8 +70,10 @@ public class CameraResultFragment extends Fragment {
         plant_pcts = reverseArray(getArguments().getStringArray("plant_pct"));
 
         for(int i = 0; i < plant_names.length; i++) {
-            plantNamePercent.add(plant_pcts[i] + "% Possibility: " + plant_names[i]);
+            plantNamePercent.add((plant_names[i]).toUpperCase() + " [ " + plant_pcts[i] + "% possibility ]");
         }
+
+        
 
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
