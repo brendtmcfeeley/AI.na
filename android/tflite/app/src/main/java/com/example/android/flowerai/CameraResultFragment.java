@@ -2,6 +2,8 @@ package com.example.android.flowerai;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -17,6 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -27,7 +31,7 @@ public class CameraResultFragment extends Fragment {
     String[] plant_names;
     String[] plant_pcts;
 
-    public static CameraResultFragment newInstance(List<Map.Entry<String, Float>> labels) {
+    public static CameraResultFragment newInstance(List<Map.Entry<String, Float>> labels, Bitmap bitmap) {
         CameraResultFragment fragmentResult = new CameraResultFragment();
         Bundle args = new Bundle();
         int l_size = labels.size();
@@ -37,11 +41,16 @@ public class CameraResultFragment extends Fragment {
         for(int i = 0; i < l_size; i++){
             Map.Entry<String, Float> label = labels.get(i);
             label_str[i] = label.getKey();
-            label_num[i] = String.format("%4.2f", label.getValue());
+            label_num[i] = String.format("%4.2f", label.getValue() * 100);
         }
+
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
 
         args.putStringArray("plant_names" , label_str);
         args.putStringArray("plant_pct", label_num);
+        args.putByteArray("image_byte", byteArray);
 
         fragmentResult.setArguments(args);
         return fragmentResult;
@@ -89,6 +98,13 @@ public class CameraResultFragment extends Fragment {
                 plantNamePercent);
 
         View view = inflater.inflate(R.layout.fragment_camera_result, container, false);
+        ImageView imgView = view.findViewById(R.id.imageViewResult);
+
+        byte[] byteArray = getArguments().getByteArray("image_byte");
+        Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+
+        imgView.setImageBitmap(bmp);
+
         ListView listView = view.findViewById(R.id.camera_result_list);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { //here u can use clickListener
