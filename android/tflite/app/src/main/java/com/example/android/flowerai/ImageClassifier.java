@@ -126,9 +126,6 @@ public class ImageClassifier {
     return textToShow;
   }
 
-<<<<<<< HEAD
-
-=======
   List<Map.Entry<String, Float>> getProcessList() {
     if (tflite == null) {
       Log.e(TAG, "Image classifier has not been initialized; Skipped.");
@@ -139,7 +136,6 @@ public class ImageClassifier {
     List<Map.Entry<String, Float>> labels = getTopKLabels();
     return labels;
   }
->>>>>>> master
 
   void applyFilter(){
     int num_labels =  labelList.size();
@@ -229,11 +225,7 @@ public class ImageClassifier {
     final int size = sortedLabels.size();
     for (int i = 0; i < size; ++i) {
       Map.Entry<String, Float> label = sortedLabels.poll();
-<<<<<<< HEAD
-      textToShow = String.format("\n%s: %4.2  f",label.getKey(),label.getValue()) + textToShow;
-=======
       textToShow = String.format("%s: %4.2f%%\n",label.getKey().toUpperCase(),(label.getValue()) * 100) + textToShow;
->>>>>>> master
     }
     return textToShow;
   }

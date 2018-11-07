@@ -126,38 +126,7 @@ public class CameraActivity extends Activity
         });
     }
 
-<<<<<<< HEAD
-    Toolbar toolbar = findViewById(R.id.toolbar);
-    SearchView searchView = findViewById(R.id.search);
-    TextView textView = findViewById(R.id.search_text);
-    ImageButton imageButton = findViewById(R.id.imageButton2);
-    toolbar.bringToFront();
 
-    textView.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        searchView.setIconified(false);
-      }
-    });
-
-    imageButton.setOnClickListener(new View.OnClickListener(){
-      @Override
-      public void onClick(View view) {
-        searchView.setIconified(true);
-      }
-    });
-
-
-
-    searchView.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener() {
-      @Override
-      public void onFocusChange(View v, boolean hasFocus) {
-        if (hasFocus) {
-          // searchView expanded
-          textView.setVisibility(View.INVISIBLE);
-          imageButton.setVisibility(View.VISIBLE);
-          changeFragment(1);
-=======
     /**
      * Changes the fragment the user is looking at
      *
@@ -183,7 +152,6 @@ public class CameraActivity extends Activity
             SearchResultFragment NAME = new SearchResultFragment();
             NAME.setArguments(bundle);
             fragmentTransaction.replace(R.id.container_cam, NAME);
->>>>>>> master
         } else {
             Camera2BasicFragment NAME = new Camera2BasicFragment();
             fragmentTransaction.replace(R.id.container_cam, NAME);
