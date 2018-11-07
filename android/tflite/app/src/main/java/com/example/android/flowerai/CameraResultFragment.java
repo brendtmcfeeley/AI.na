@@ -13,12 +13,16 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Button;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
@@ -72,9 +76,6 @@ public class CameraResultFragment extends Fragment {
         for(int i = 0; i < plant_names.length; i++) {
             plantNamePercent.add((plant_names[i]).toUpperCase() + " [ " + plant_pcts[i] + "% possibility ]");
         }
-
-        
-
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
         myRef.addValueEventListener(new ValueEventListener() {
@@ -103,12 +104,32 @@ public class CameraResultFragment extends Fragment {
         ImageView imgView = view.findViewById(R.id.imageViewResult);
 
         byte[] byteArray = getArguments().getByteArray("image_byte");
-        Bitmap bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
-
-        imgView.setImageBitmap(bmp);
+        Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
+        imgView.setImageBitmap(bitmap);
 
         ListView listView = view.findViewById(R.id.camera_result_list);
         listView.setAdapter(adapter);
+
+        Button uploadButton = view.findViewById(R.id.image_upload);
+        uploadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Get Firebase storage instance
+                FirebaseStorage storage = FirebaseStorage.getInstance();
+                // Point to root directory
+                StorageReference storageRef = storage.getReference();
+                // Point to flowerUploads directory
+                StorageReference uploadsDir = storageRef.child("flowerUploads");
+                Long timeStamp = System.currentTimeMillis()/1000;
+                String filename = timeStamp.toString();
+                StorageReference imageRef = uploadsDir.child(filename + ".jpeg");
+                UploadTask uploadTask = imageRef.putBytes(byteArray);
+                uploadButton.setText("Image Uploaded");
+                uploadButton.setBackgroundTintList(getResources().getColorStateList(R.color.red_800));
+                uploadButton.setClickable(false);
+            }
+        });
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() { //here u can use clickListener
             @Override
             public void onItemClick(final AdapterView<?> parent, View view, final int position, long id) {
