@@ -57,6 +57,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -300,7 +304,7 @@ public class Camera2BasicFragment extends Fragment
         List<Map.Entry<String, Float>> labels = classifier.getProcessList(bitmap);
         bitmap.recycle();
         //showToast(textToShow);
-        mCallback.onProcess(labels);
+        mCallback.onProcess(labels, bitmap);
       }
     });
     return view;
@@ -310,7 +314,7 @@ public class Camera2BasicFragment extends Fragment
 
   // Container Activity must implement this interface
   public interface Camera2BasicFragmentSelectedListener {
-    public void onProcess(List<Map.Entry<String, Float>> labels);
+    public void onProcess(List<Map.Entry<String, Float>> labels, Bitmap retrievedImage);
   }
 
   @Override
