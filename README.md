@@ -4,6 +4,9 @@
  <a href="https://github.com/brendtmcfeeley/FlowerAI/">
    <img width="48px" height="48px" src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67" alt="Aina Cover Photo" />
  </a>
+ <a href="https://devpost.com/software/guccigang">
+   <img width="48px" height="48px" src="https://png.icons8.com/material/1600/devpost.png" alt="Aina Cover Photo" />
+ </a>
 </p>
 
 # Table of Contents:
