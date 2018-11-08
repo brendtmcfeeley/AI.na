@@ -33,6 +33,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import static android.app.FragmentManager.POP_BACK_STACK_INCLUSIVE;
+
 /**
  * Main {@code Activity} class for the Camera app.
  */
@@ -72,7 +74,11 @@ public class CameraActivity extends Activity
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                textView.setVisibility(View.VISIBLE);
+                imageButton.setVisibility(View.GONE);
+                searchView.setQuery("",false);
                 searchView.setIconified(true);
+                changeToCamera2Fragment();
             }
         });
 
@@ -81,6 +87,7 @@ public class CameraActivity extends Activity
             @Override
             public void onClick(View view) {
                 textView.setText("Plant Search");
+                textView.setClickable(true);
                 textView.setVisibility(View.VISIBLE);
                 imageButton.setVisibility(View.GONE);
                 resultBackButton.setVisibility(View.GONE);
@@ -96,7 +103,6 @@ public class CameraActivity extends Activity
             // Grabs the user input and changes the fragment by passing in its value when they click submit
             @Override
             public boolean onQueryTextSubmit(String query) {
-                changeToSearchResultFragment(query, "textSubmit");
                 return true;
             }
 
@@ -116,7 +122,7 @@ public class CameraActivity extends Activity
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
                     // searchView expanded
-                    textView.setVisibility(View.INVISIBLE);
+                    textView.setVisibility(View.GONE);
                     imageButton.setVisibility(View.VISIBLE);
                     changeToSearchResultFragment(null, "focusChange");
                 }
@@ -127,19 +133,29 @@ public class CameraActivity extends Activity
 
     @Override
     public void onBackPressed() {
-        if (getFragmentManager().getBackStackEntryCount() > 0) {
-            SearchView searchView = (SearchView) findViewById(R.id.search);
-            TextView textView = findViewById(R.id.search_text);
-            ImageButton imageButton = findViewById(R.id.imageButton2);
-            ImageButton resultBackButton = findViewById(R.id.resultBack);
+        SearchView searchView = (SearchView) findViewById(R.id.search);
+        TextView textView = findViewById(R.id.search_text);
+        ImageButton imageButton = findViewById(R.id.imageButton2);
+        ImageButton resultBackButton = findViewById(R.id.resultBack);
+        FragmentManager fm = getFragmentManager();
 
+        if (fm.getBackStackEntryCount() > 0) {
+            FragmentManager.BackStackEntry BSE = fm.getBackStackEntryAt(0);
             textView.setText("Plant Search");
+            textView.setClickable(true);
             textView.setVisibility(View.VISIBLE);
             imageButton.setVisibility(View.GONE);
             resultBackButton.setVisibility(View.GONE);
             searchView.setVisibility(View.VISIBLE);
+            searchView.setQuery("",false);
             searchView.setIconified(true);
-            getFragmentManager().popBackStack();
+            if(BSE.getName().equals("SEARCH_RESULT")) {
+                getFragmentManager().popBackStack(0, POP_BACK_STACK_INCLUSIVE);
+            }
+            else if(BSE.getName().equals("CAMERA_RESULT")) {
+                getFragmentManager().popBackStack("CAMERA_RESULT", POP_BACK_STACK_INCLUSIVE);
+            }
+
         } else {
             super.onBackPressed();
         }
@@ -178,7 +194,9 @@ public class CameraActivity extends Activity
         NAME.setArguments(bundle);
         fragmentTransaction.replace(R.id.container_cam, NAME);
         // Commits the fragment change
-        fragmentTransaction.addToBackStack("CAMERA_SEARCH");
+        if (typeChange.equals("focusChange")) {
+            fragmentTransaction.addToBackStack("SEARCH_RESULT");
+        }
         fragmentTransaction.commit();
     }
 
@@ -197,6 +215,7 @@ public class CameraActivity extends Activity
         SearchView searchView = findViewById(R.id.search);
 
         textView.setText("Camera Result");
+        textView.setClickable(false);
         resultBackButton.setVisibility(View.VISIBLE);
         searchView.setVisibility(View.GONE);
         changeToCameraResultFragment(label, bitmap);
