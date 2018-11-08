@@ -5,6 +5,10 @@
 ## Our Aina Vision
 Our vision is to increase the percentage of threatened and endangered native species managed in Hawai'i by 2030 through a focus on sustainability goals demonstrated in the Aloha+ Challenge Dashboard. As students of the University of Hawai'i, we aim to ultimately provide sustainable solutions that are appropriately matched with technologies and platforms learned throughout our education career. We hope to give back to our Aina as much as it has given us.
 
+### Our Challenge
+
+### Our Solution
+
 ## Prerequisites
 
 ### Linux
@@ -49,63 +53,26 @@ To set up an emulator or a hardware device to run your app, click [here](https:/
 
 ### Interface
 
-The app will open the camera as soon as it's loaded and will be running the model in real time!
+The app will open the camera as soon as it's loaded and will be running the model in real time! You can also choose to search plants that are in the database!
 
-![Example Image 1](exImg3.jpg)
-
-You can also choose to search plants that are in the database!
-
-![Example Image 2](exImg2.jpg)
+![Example Image 1](exImg3.jpg) ![Example Image 2](exImg2.jpg)
 
 After selecting an item from the list you should see something like this!
 
 ![Example Image 3](exImg1.jpg) ![Example Image 3](exImg4.jpg)
 
+You can then choose to press the Report Sighting button to report that plant to the agency or upload your own image of an unidentified plant to the database for the agencies to see what you've found!
+
 ## Much Mahalos
 
 ### HACC
+![HACC IMAGE](http://hacc.hawaii.gov/wp-content/uploads/2017/08/HACC-with-Flag-final.png)
+
+We would like to thank [HACC](http://hacc.hawaii.gov/) for the opportunity to help contribute solutions to challenges focusing on social, economic, and environemntal factors that are faced today. This was an engaging experience with the community in trying to modernize state functions, services, and supporting the IT workforce development.
+
 
 ### Sponsors
+I would also like to thank the sponsoring for making such an event possible for not just us but for everyone else who had been involved with this competition!
+
 
 ### Our Ohana
-```
-Python : https://www.python.org/downloads/
-
-Android Studio : https://developer.android.com/studio/
-
-TensorFlow : pip install --upgrade  "tensorflow==1.11.*"
-
-PILLOW : pip install PILLOW
-```
-
-### Running the Application
-Clone the repository
-```
-git clone https://github.com/brendtmcfeeley/FlowerAI.git
-```
-cd into the directory
-```
-cd FlowerAI
-```
-
-Test to make sure you Machine Learning Model is working
-```
-python -m scripts.label_image \
-  --graph=tf_files/retrained_graph.pb  \
-  --image=tf_files/flower_photos/daisy/3475870145_685a19116d.jpg
-```
-
-Example Output :
-```
-Evaluation time (1-image): 0.140s
-
-daisy 0.7361
-dandelion 0.242222
-tulips 0.0185161
-roses 0.0031544
-sunflowers 8.00981e-06
-```
-
-### Open Android Studio
-Follow these steps lol :
-https://codelabs.developers.google.com/codelabs/tensorflow-for-poets-2-tflite/#3
