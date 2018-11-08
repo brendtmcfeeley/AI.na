@@ -1,7 +1,8 @@
 ![Aina Cover Photo](ainaCoverImage.png)
 
 # Table of Contents:
-* [Aina Vision](#out-aina-vision)
+* [Github](https://github.com/brendtmcfeeley/FlowerAI/)
+* [Aina Vision](#our-aina-vision)
 * [Prerequisites](#prerequisites)
 * [Setting up the Application](#setting-up-the-application)
 * [Much Mahalos](#much-mahalos)
