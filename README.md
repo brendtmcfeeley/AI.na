@@ -1,4 +1,4 @@
-<a href="https://github.com/brendtmcfeeley/FlowerAI/"><img src="ainaCoverImage.png" alt="Aina Cover Photo" /></a>
+<a href="https://github.com/brendtmcfeeley/FlowerAI/"><img src="images/ainaCoverImage.png" alt="Aina Cover Photo" /></a>
 
 <hr>
 
@@ -64,7 +64,7 @@ git clone https://github.com/brendtmcfeeley/FlowerAI.git
 Open AndroidStudio. After it loads select "Open an existing Android Studio project" from this popup:
 
 <p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/android1.png?raw=true" alt="Andrew"/>
+  <img src="images/android1.png?raw=true" alt="Andrew"/>
 </p>
 
 In the file selector, choose FlowerAI/android/tflite from your working directory.
@@ -72,7 +72,7 @@ In the file selector, choose FlowerAI/android/tflite from your working directory
 You will get a "Gradle Sync" popup, the first time you open the project, asking about using gradle wrapper. Click "OK".
 
 <p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/android2.png?raw=true" alt="Andrew"/>
+  <img src="images/android2.png?raw=true" alt="Andrew"/>
 </p>
 
 To set up an emulator or a hardware device to run your app, click [here](https://developer.android.com/studio/run/) for more information.
@@ -82,15 +82,15 @@ To set up an emulator or a hardware device to run your app, click [here](https:/
 The app will open the camera as soon as it's loaded and will be running the model in real time! You can also choose to search plants that are in the database!
 
 <p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/exImg3.jpg?raw=true" alt="Andrew"/>
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/exImg2.jpg?raw=true" alt="Andrew"/>
+  <img src="images/exImg3.jpg?raw=true" alt="Andrew"/>
+  <img src="images/exImg2.jpg?raw=true" alt="Andrew"/>
 </p>
 
 After selecting an item from the list you should see something like this!
 
 <p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/exImg1.jpg?raw=true" alt="Andrew"/>
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/exImg4.jpg?raw=true" alt="Andrew"/>
+  <img src="images/exImg1.jpg?raw=true" alt="Andrew"/>
+  <img src="images/exImg4.jpg?raw=true" alt="Andrew"/>
 </p>
 
 You can then choose to press the Report Sighting button to report that plant to the agency or upload your own image of an unidentified plant to the database for the agencies to see what you've found!
@@ -105,8 +105,8 @@ We would like to thank [HACC](http://hacc.hawaii.gov/) for the opportunity to he
 ## Sponsors:
 We would also like to thank the sponsors, partners, and presenters for making such an event possible for not just us but for everyone else who had been involved with this competition!
 
-![Sponsors Image](sponsorsImg.png)
-![Partners Image](partnersImg.png)
+![Sponsors Image](images/sponsorsImg.png)
+![Partners Image](images/partnersImg.png)
 
 # Our Ohana:
 This project would not have been possible without each every one of our amazing and talented teammates!
@@ -114,7 +114,7 @@ This project would not have been possible without each every one of our amazing 
 ## Team Lead:
 
 <p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/brendt.png?raw=true" alt="Andrew"/>
+  <img src="images/brendt.png?raw=true" alt="Andrew"/>
 </p>
 <h3 align="center" id="brendtmcfeeleylinkedinhttpswwwlinkedincominbrendtmcfeeleygithubhttpsgithubcombrendtmcfeeley">Brendt Mcfeeley | <a href="https://www.linkedin.com/in/brendt-mcfeeley/">LinkedIn</a> | <a href="https://github.com/brendtmcfeeley">GitHub</a></h3>
 
@@ -122,8 +122,8 @@ This project would not have been possible without each every one of our amazing 
 ## User Interface / User Experience Developers:
 
 <p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/kenneth.jpeg?raw=true" alt="Andrew"/>
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/andrew.jpeg?raw=true" alt="Andrew"/>
+  <img src="images/kenneth.jpeg?raw=true" alt="Andrew"/>
+  <img src="images/andrew.jpeg?raw=true" alt="Andrew"/>
   <h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">
     Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a>  
     Andrew Obatake | <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106/">LinkedIn</a> | <a href="https://github.com/aobatake">GitHub</a>
@@ -134,13 +134,13 @@ This project would not have been possible without each every one of our amazing 
 
 
 <p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/sae.jpeg?raw=true" alt="Andrew"/>
+  <img src="images/sae.jpeg?raw=true" alt="Andrew"/>
 </p>
 <h3 align="center" id="saehyunsonglinkedinhttpswwwlinkedincominsaehyunsonggithubhttpsgithubcomsaehyuns">Sae Hyun Song | <a href="https://www.linkedin.com/in/sae-hyun-song/">LinkedIn</a> | <a href="https://github.com/saehyuns">GitHub</a></h3>
 
 <hr>
 
 <p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/kian.jpeg?raw=true" alt="Andrew"/>
+  <img src="images/kian.jpeg?raw=true" alt="Andrew"/>
 </p>
 <h3 align="center" id="kiankobayashilinkedinhttpswwwlinkedincominkiankobayashigithubhttpsgithubcomkiankoba">Kian Kobayashi | <a href="https://www.linkedin.com/in/kiankobayashi/">LinkedIn</a> | <a href="https://github.com/kiankoba">GitHub</a></h3>
