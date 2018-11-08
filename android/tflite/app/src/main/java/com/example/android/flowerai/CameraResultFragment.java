@@ -4,8 +4,11 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +17,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Button;
+import android.widget.PopupWindow;
+import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -125,8 +130,12 @@ public class CameraResultFragment extends Fragment {
                 StorageReference imageRef = uploadsDir.child(filename + ".jpeg");
                 UploadTask uploadTask = imageRef.putBytes(byteArray);
                 uploadButton.setText("Image Uploaded");
-                uploadButton.setBackgroundTintList(getResources().getColorStateList(R.color.red_800));
+
+                showPopup(container);
+                uploadButton.setAlpha(.5f);
                 uploadButton.setClickable(false);
+
+
             }
         });
 
@@ -151,6 +160,38 @@ public class CameraResultFragment extends Fragment {
         Collections.reverse(listOfProducts);
         String[] reversed = listOfProducts.toArray(array);
         return reversed;
+    }
+
+    public void showPopup(View anchorView) {
+
+        View popupView = getLayoutInflater().inflate(R.layout.popup_layout, null);
+
+        PopupWindow popupWindow = new PopupWindow(popupView,
+                ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        // Example: If you have a TextView inside `popup_layout.xml`
+        TextView tv = popupView.findViewById(R.id.tv);
+
+        tv.setText("Image has been uploaded to the KUPU-DLNR database");
+        tv.setBackgroundColor(Color.WHITE);
+        tv.setTextColor(Color.BLACK);
+        tv.setBackgroundResource(R.drawable.rounded_corner);
+
+
+        // If the PopupWindow should be focusable
+        popupWindow.setFocusable(true);
+
+        // If you need the PopupWindow to dismiss when when touched outside
+        popupWindow.setBackgroundDrawable(new ColorDrawable());
+
+        int location[] = new int[2];
+
+        // Get the View's(the one that was clicked in the Fragment) location
+        anchorView.getLocationOnScreen(location);
+
+        // Using location, the PopupWindow will be displayed right under anchorView
+        popupWindow.showAtLocation(anchorView, Gravity.CENTER,
+                location[0], location[1]);
     }
 
 }
