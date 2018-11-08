@@ -2,8 +2,10 @@
 
 <hr>
 
-<h3 align="center" id="developedbygucciganghttpsgithubcomsaehyunsgithelper">Developed by: <a href="https://github.com/saehyuns/GitHelper/">Gucci Gang</a></h3>
-<h3 align="center" id="developedbygucciganghttpsgithubcomsaehyunsgithelper">Check out the: <a href="https://devpost.com/software/guccigang">DevPost</a></h3>
+<h3 align="center" id="developedbygucciganghttpsgithubcomsaehyunsgithelper">
+  Developed by: <a href="https://github.com/saehyuns/GitHelper/">Gucci Gang</a>
+  Check out the: <a href="https://devpost.com/software/guccigang">DevPost</a>
+</h3>
 
 # Table of Contents:
 * [Aina Vision](#our-aina-vision)
@@ -114,7 +116,7 @@ This project would not have been possible without each every one of our amazing 
 ## Team Lead:
 
 <p align="center">
-  <img src="images/brendt.png?raw=true" alt="Andrew"/>
+  <img width="250px" height="250px" src="images/brendt.png?raw=true" alt="Andrew"/>
 </p>
 <h3 align="center" id="brendtmcfeeleylinkedinhttpswwwlinkedincominbrendtmcfeeleygithubhttpsgithubcombrendtmcfeeley">Brendt Mcfeeley | <a href="https://www.linkedin.com/in/brendt-mcfeeley/">LinkedIn</a> | <a href="https://github.com/brendtmcfeeley">GitHub</a></h3>
 
@@ -122,8 +124,8 @@ This project would not have been possible without each every one of our amazing 
 ## User Interface / User Experience Developers:
 
 <p align="center">
-  <img src="images/kenneth.jpeg?raw=true" alt="Andrew"/>
-  <img src="images/andrew.jpeg?raw=true" alt="Andrew"/>
+  <img width="250px" height="250px" src="images/kenneth.png?raw=true" alt="Andrew"/>
+  <img width="250px" height="250px" src="images/andrew.png?raw=true" alt="Andrew"/>
   <h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">
     Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a>  
     Andrew Obatake | <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106/">LinkedIn</a> | <a href="https://github.com/aobatake">GitHub</a>
@@ -134,13 +136,13 @@ This project would not have been possible without each every one of our amazing 
 
 
 <p align="center">
-  <img src="images/sae.jpeg?raw=true" alt="Andrew"/>
+  <img width="250px" height="250px" src="images/sae.png?raw=true" alt="Andrew"/>
 </p>
 <h3 align="center" id="saehyunsonglinkedinhttpswwwlinkedincominsaehyunsonggithubhttpsgithubcomsaehyuns">Sae Hyun Song | <a href="https://www.linkedin.com/in/sae-hyun-song/">LinkedIn</a> | <a href="https://github.com/saehyuns">GitHub</a></h3>
 
 <hr>
 
 <p align="center">
-  <img src="images/kian.jpeg?raw=true" alt="Andrew"/>
+  <img width="250px" height="250px" src="images/kian.png?raw=true" alt="Andrew"/>
 </p>
 <h3 align="center" id="kiankobayashilinkedinhttpswwwlinkedincominkiankobayashigithubhttpsgithubcomkiankoba">Kian Kobayashi | <a href="https://www.linkedin.com/in/kiankobayashi/">LinkedIn</a> | <a href="https://github.com/kiankoba">GitHub</a></h3>
