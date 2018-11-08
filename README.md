@@ -59,11 +59,7 @@ You can also choose to search plants that are in the database!
 
 After selecting an item from the list you should see something like this!
 
-![Example Image 3](exImg1.jpg)
-
-or 
-
-![Example Image 3](exImg4.jpg)
+![Example Image 3](exImg1.jpg) ![Example Image 3](exImg4.jpg)
 
 ## Much Mahalos
 
