@@ -1,7 +1,6 @@
-![Aina Cover Photo](ainaCoverImage.png)
+<a href="https://github.com/brendtmcfeeley/FlowerAI/"><img src="ainaCoverImage.png" alt="Aina Cover Photo" /></a>
 
 # Table of Contents:
-* [Github](https://github.com/brendtmcfeeley/FlowerAI/)
 * [Aina Vision](#our-aina-vision)
 * [Prerequisites](#prerequisites)
 * [Setting up the Application](#setting-up-the-application)
