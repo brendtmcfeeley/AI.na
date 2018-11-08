@@ -70,9 +70,13 @@ You can then choose to press the Report Sighting button to report that plant to 
 
 We would like to thank [HACC](http://hacc.hawaii.gov/) for the opportunity to help contribute solutions to challenges focusing on social, economic, and environemntal factors that are faced today. This was an engaging experience with the community in trying to modernize state functions, services, and supporting the IT workforce development.
 
-
 ### Sponsors
-I would also like to thank the sponsoring for making such an event possible for not just us but for everyone else who had been involved with this competition!
+We would also like to thank the sponsors, partners, and presenters for making such an event possible for not just us but for everyone else who had been involved with this competition!
+
+![Sponsors Image](sponsorsImg)
+![Partners Image](partnersImg)
+
+
 
 
 ### Our Ohana
