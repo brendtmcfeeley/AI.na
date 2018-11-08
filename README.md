@@ -1,4 +1,4 @@
-# FlowerAI
+# AI.na
 
 ### Prerequisites
 ```
