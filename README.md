@@ -141,6 +141,6 @@ This project would not have been possible without each every one of our amazing 
   <img width="250px" height="250px" src="images/kian.png?raw=true" alt="Andrew"/>
   <h3 align="center" id="saehyunsonglinkedinhttpswwwlinkedincominsaehyunsonggithubhttpsgithubcomsaehyuns">
     Sae Hyun Song | <a href="https://www.linkedin.com/in/sae-hyun-song/">LinkedIn</a> | <a href="https://github.com/saehyuns">GitHub</a>
-    Kian Kobayashi | <a href="https://www.linkedin.com/in/kiankobayashi/">LinkedIn</a> | <a href="https://github.com/kiankoba">GitHub</a>
+    || Kian Kobayashi | <a href="https://www.linkedin.com/in/kiankobayashi/">LinkedIn</a> | <a href="https://github.com/kiankoba">GitHub</a>
   </h3>
 </p>
