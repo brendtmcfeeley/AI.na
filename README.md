@@ -123,7 +123,7 @@ This project would not have been possible without each every one of our amazing 
 <p align="center">
   <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/kenneth.jpeg?raw=true" alt="Andrew"/>
 </p>
-<h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | [GitHub]</h3>
+<h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a></h3>
 
 <hr>
 
