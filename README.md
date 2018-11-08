@@ -121,16 +121,13 @@ This project would not have been possible without each every one of our amazing 
 
 ## User Interface / User Experience Developers:
 
-<p align="center" display="inline">
-  <div display="inline">
-    <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/kenneth.jpeg?raw=true" alt="Andrew"/>
-   <h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a>      </h3>
-  </div>
-  <div display="inline">
-   <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/andrew.jpeg?raw=true" alt="Andrew"/>
-   <h3 align="center" id="andrewobatakelinkedinhttpswwwlinkedincominandrewobatake8a5232106githubhttpsgithubcomaobatake">Andrew Obatake | <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106/">LinkedIn</a> | <a href="https://github.com/aobatake">GitHub</a>
-    </h3>
-  </div>
+<p align="center">
+  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/kenneth.jpeg?raw=true" alt="Andrew"/>
+  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/andrew.jpeg?raw=true" alt="Andrew"/>
+  <h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">
+    Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a>  
+    Andrew Obatake | <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106/">LinkedIn</a> | <a href="https://github.com/aobatake">GitHub</a>
+  </h3>
 </p>
 
 ## Machine Learning / Backend Developers:
