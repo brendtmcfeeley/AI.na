@@ -88,19 +88,19 @@ User Interface / User Experience Developers:
 
 [Kenneth Lauritzen](https://linkedin.com/in/kenneth-lauritzen-49907216a/):
 
-![Kenneth](kenneth.png)
+![Kenneth](kenneth.jpeg)
 
 [Andrew Obatake](https://www.linkedin.com/in/andrew-obatake-8a5232106/):
 
-![Andrew](andrew.png)
+![Andrew](andrew.jpeg)
 
 Machine Learning / Backend Developers:
 
-![Sae](sae.png):
+![Sae](sae.jpeg):
 
 [Sae Hyun Song](https://www.linkedin.com/in/sae-hyun-song/)
 
 [Kian Kobayashi](https://www.linkedin.com/in/kiankobayashi/):
 
-![Kian](kian.png)
+![Kian](kian.jpeg)
 
