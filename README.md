@@ -82,25 +82,22 @@ This project would not have been possible without each every one of our amazing 
 ## Team Lead:
 
 ![Brendt](brendt.png)
-
 ### Brendt Mcfeeley | [LinkedIn](https://www.linkedin.com/in/brendt-mcfeeley/) | [GitHub]()
 
 ## User Interface / User Experience Developers:
 
 ![Kenneth](kenneth.jpeg)
-
 ### Kenneth Lauritzen | [LinkedIn](https://linkedin.com/in/kenneth-lauritzen-49907216a/) | [GitHub]()
 
-![Andrew](andrew.jpeg)
 
+![Andrew](andrew.jpeg)
 ### Andrew Obatake | [LinkedIn](https://www.linkedin.com/in/andrew-obatake-8a5232106/) | [GitHub]()
 
 ## Machine Learning / Backend Developers:
 
 ![Sae](sae.jpeg):
-
 ### Sae Hyun Song | [LinkedIn](https://www.linkedin.com/in/sae-hyun-song/) | [GitHub]()
 
-![Kian](kian.jpeg)
 
+![Kian](kian.jpeg)
 ### Kian Kobayashi | [LinkedIn](https://www.linkedin.com/in/kiankobayashi/) | [GitHub]()
