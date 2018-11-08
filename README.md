@@ -7,11 +7,11 @@
  <a href="https://devpost.com/software/guccigang">
    <img width="48px" height="48px" src="https://png.icons8.com/material/1600/devpost.png" alt="Aina Cover Photo" />
  </a>
- <a href="https://en.wikipedia.org/wiki/Markdown">
-   <img width="48px" height="48px" src="https://markdown-here.com/img/logo-2015/austin.png" alt="Aina Cover Photo" />
- </a>
  <a href="https://markdown-here.com/">
    <img width="48px" height="48px" src="https://markdown-here.com/img/logo-2015/austin.png" alt="Aina Cover Photo" />
+ </a>
+ <a href="https://www.python.org/">
+   <img width="48px" height="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png" alt="Aina Cover Photo" />
  </a>
  <a href="https://developer.android.com/studio/">
    <img width="48px" height="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/512px-Android_Studio_icon.svg.png" alt="Aina Cover Photo" />
