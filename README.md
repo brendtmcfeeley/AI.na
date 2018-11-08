@@ -1,25 +1,8 @@
 <a href="https://github.com/brendtmcfeeley/FlowerAI/"><img src="ainaCoverImage.png" alt="Aina Cover Photo" /></a>
+
 <hr>
-<p align="center">
- <a href="https://github.com/brendtmcfeeley/FlowerAI/">
-   <img width="48px" height="48px" src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67" alt="Aina Cover Photo" />
- </a>
- <a href="https://devpost.com/software/guccigang">
-   <img width="48px" height="48px" src="https://png.icons8.com/material/1600/devpost.png" alt="Aina Cover Photo" />
- </a>
- <a href="https://markdown-here.com/">
-   <img width="48px" height="48px" src="https://markdown-here.com/img/logo-2015/austin.png" alt="Aina Cover Photo" />
- </a>
- <a href="https://www.python.org/">
-   <img width="48px" height="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png" alt="Aina Cover Photo" />
- </a>
- <a href="https://developer.android.com/studio/">
-   <img width="48px" height="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/512px-Android_Studio_icon.svg.png" alt="Aina Cover Photo" />
- </a>
- <a href="https://www.tensorflow.org/">
-   <img width="48px" height="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/2000px-Tensorflow_logo.svg.png" alt="Aina Cover Photo" />
- </a>
-</p>
+
+<h3 align="center" id="developedbygucciganghttpsgithubcomsaehyunsgithelper">Developed by: <a href="https://github.com/saehyuns/GitHelper/">Gucci Gang</a></h3>
 
 # Table of Contents:
 * [Aina Vision](#our-aina-vision)
