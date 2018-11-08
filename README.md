@@ -115,7 +115,7 @@ We would also like to thank the sponsors, partners, and presenters for making su
 # Our Ohana:
 This project would not have been possible without each every one of our amazing and talented teammates!
 
-<h2 align="center" id="">Team Lead</h2>
+<h2 align="center" id="">Team Lead:</h2>
 
 <p align="center">
   <img width="250px" height="250px" src="images/brendt.png?raw=true" alt="Andrew"/>
@@ -134,7 +134,7 @@ This project would not have been possible without each every one of our amazing 
   </h3>
 </p>
 
-<h2 align="center" id="">Machine Learning / Backend Developers</h2>
+<h2 align="center" id="">Machine Learning / Backend Developers:</h2>
 
 <p align="center">
   <img width="250px" height="250px" src="images/sae.png?raw=true" alt="Andrew"/>
