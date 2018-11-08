@@ -102,13 +102,11 @@ public class ImageClassifier {
     imgData.order(ByteOrder.nativeOrder());
     labelProbArray = new float[1][labelList.size()];
     filterLabelProbArray = new float[FILTER_STAGES][labelList.size()];
-    Log.d(TAG, "Created a Tensorflow Lite Image Classifier.");
   }
 
   /** Classifies a frame from the preview stream. */
   String classifyFrame(Bitmap bitmap) {
     if (tflite == null) {
-      Log.e(TAG, "Image classifier has not been initialized; Skipped.");
       return "Uninitialized Classifier.";
     }
     convertBitmapToByteBuffer(bitmap);
@@ -116,7 +114,6 @@ public class ImageClassifier {
     long startTime = SystemClock.uptimeMillis();
     tflite.run(imgData, labelProbArray);
     long endTime = SystemClock.uptimeMillis();
-    Log.d(TAG, "Timecost to run model inference: " + Long.toString(endTime - startTime));
 
     // smooth the results
     applyFilter();

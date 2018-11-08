@@ -138,25 +138,24 @@ public class CameraActivity extends Activity
         ImageButton imageButton = findViewById(R.id.imageButton2);
         ImageButton resultBackButton = findViewById(R.id.resultBack);
         FragmentManager fm = getFragmentManager();
+        SearchResultFragment srf = new SearchResultFragment();
+        CameraResultFragment crf = new CameraResultFragment();
 
-        if (fm.getBackStackEntryCount() > 0) {
-            FragmentManager.BackStackEntry BSE = fm.getBackStackEntryAt(0);
-            textView.setText("Plant Search");
-            textView.setClickable(true);
-            textView.setVisibility(View.VISIBLE);
-            imageButton.setVisibility(View.GONE);
-            resultBackButton.setVisibility(View.GONE);
-            searchView.setVisibility(View.VISIBLE);
-            searchView.setQuery("",false);
-            searchView.setIconified(true);
-            if(BSE.getName().equals("SEARCH_RESULT")) {
-                getFragmentManager().popBackStack(0, POP_BACK_STACK_INCLUSIVE);
-            }
-            else if(BSE.getName().equals("CAMERA_RESULT")) {
-                getFragmentManager().popBackStack("CAMERA_RESULT", POP_BACK_STACK_INCLUSIVE);
-            }
+        textView.setText("Plant Search");
+        textView.setClickable(true);
+        textView.setVisibility(View.VISIBLE);
+        imageButton.setVisibility(View.GONE);
+        resultBackButton.setVisibility(View.GONE);
+        searchView.setVisibility(View.VISIBLE);
+        searchView.setQuery("",false);
+        searchView.setIconified(true);
 
-        } else {
+        if (fm.findFragmentById(R.id.container_cam).getTag().equals("CAMERA_RESULT_FRAGMENT")||
+                fm.findFragmentById(R.id.container_cam).getTag().equals("SEARCH_RESULT_FRAGMENT")) {
+
+            changeToCamera2Fragment();
+        }
+        else {
             super.onBackPressed();
         }
     }
@@ -166,7 +165,7 @@ public class CameraActivity extends Activity
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         Camera2BasicFragment NAME = new Camera2BasicFragment();
-        fragmentTransaction.replace(R.id.container_cam, NAME);
+        fragmentTransaction.replace(R.id.container_cam, NAME, "CAMERA2_FRAGMENT");
         fragmentTransaction.commit();
     }
 
@@ -192,11 +191,8 @@ public class CameraActivity extends Activity
         // Links the newly create fragment with the bundle
         SearchResultFragment NAME = new SearchResultFragment();
         NAME.setArguments(bundle);
-        fragmentTransaction.replace(R.id.container_cam, NAME);
+        fragmentTransaction.replace(R.id.container_cam, NAME, "SEARCH_RESULT_FRAGMENT");
         // Commits the fragment change
-        if (typeChange.equals("focusChange")) {
-            fragmentTransaction.addToBackStack("SEARCH_RESULT");
-        }
         fragmentTransaction.commit();
     }
 
@@ -204,8 +200,7 @@ public class CameraActivity extends Activity
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         CameraResultFragment NAME = CameraResultFragment.newInstance(label, bitmap);
-        fragmentTransaction.replace(R.id.container_cam, NAME);
-        fragmentTransaction.addToBackStack("CAMERA_RESULT");
+        fragmentTransaction.replace(R.id.container_cam, NAME, "CAMERA_RESULT_FRAGMENT");
         fragmentTransaction.commit();
     }
 

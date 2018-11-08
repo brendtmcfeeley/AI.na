@@ -272,7 +272,6 @@ public class Camera2BasicFragment extends Fragment
     } else if (notBigEnough.size() > 0) {
       return Collections.max(notBigEnough, new CompareSizesByArea());
     } else {
-      Log.e(TAG, "Couldn't find any suitable preview size");
       return choices[0];
     }
   }
@@ -342,7 +341,6 @@ public class Camera2BasicFragment extends Fragment
     try {
       classifier = new ImageClassifier(getActivity());
     } catch (IOException e) {
-      Log.e(TAG, "Failed to initialize an image classifier.");
     }
     startBackgroundThread();
   }
