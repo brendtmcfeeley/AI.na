@@ -15,11 +15,14 @@ Python is an interpreted, object-oriented, high-level programming language with 
 
 ### TensorFlowLite
 After installing Python, the next thing you would want to install is TensorFlowLite using PIP that comes with the Python installation. TensorFlow Lite is the official solution for running machine learning models on mobile and embedded devices. It enables on‑device machine learning inference with low latency and a small binary size on Android, iOS, and other operating systems. To learn more click [here](https://www.tensorflow.org/lite/).
+
+In the terminal / commandline: 
 ```
 pip install tensorflow
 ```
 
 ### Android Studio
+After installing Tensorflow, the next thing you need to install is Android Studio. Android Studio is the official [Integrated Development Environment (IDE)](https://searchsoftwarequality.techtarget.com/definition/integrated-development-environment) for [Android app](https://en.wikipedia.org/wiki/Android_(operating_system)) development, based on [IntelliJ IDEA](https://www.jetbrains.com/idea/). Android Studio will be used as our main working environment.
 
 ### PILLOW
 
