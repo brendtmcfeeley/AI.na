@@ -79,28 +79,29 @@ We would also like to thank the sponsors, partners, and presenters for making su
 ## Our Ohana
 This project would not have been possible without each every one of our amazing and talented teammates!
 
-Team Lead:
+### Team Lead:
+
+#### [Brendt Mcfeeley](https://www.linkedin.com/in/brendt-mcfeeley/)
 
 ![Brendt](brendt.png)
-[Brendt Mcfeeley](https://www.linkedin.com/in/brendt-mcfeeley/)
 
-User Interface / User Experience Developers:
+### User Interface / User Experience Developers:
 
-[Kenneth Lauritzen](https://linkedin.com/in/kenneth-lauritzen-49907216a/):
+#### [Kenneth Lauritzen](https://linkedin.com/in/kenneth-lauritzen-49907216a/):
 
 ![Kenneth](kenneth.jpeg)
 
-[Andrew Obatake](https://www.linkedin.com/in/andrew-obatake-8a5232106/):
+#### [Andrew Obatake](https://www.linkedin.com/in/andrew-obatake-8a5232106/):
 
 ![Andrew](andrew.jpeg)
 
-Machine Learning / Backend Developers:
+### Machine Learning / Backend Developers:
+
+#### [Sae Hyun Song](https://www.linkedin.com/in/sae-hyun-song/)
 
 ![Sae](sae.jpeg):
 
-[Sae Hyun Song](https://www.linkedin.com/in/sae-hyun-song/)
-
-[Kian Kobayashi](https://www.linkedin.com/in/kiankobayashi/):
+#### [Kian Kobayashi](https://www.linkedin.com/in/kiankobayashi/):
 
 ![Kian](kian.jpeg)
 
