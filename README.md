@@ -76,32 +76,31 @@ We would also like to thank the sponsors, partners, and presenters for making su
 ![Sponsors Image](sponsorsImg.png)
 ![Partners Image](partnersImg.png)
 
-## Our Ohana
+# Our Ohana
 This project would not have been possible without each every one of our amazing and talented teammates!
 
-### Team Lead:
-
-#### [Brendt Mcfeeley](https://www.linkedin.com/in/brendt-mcfeeley/)
+## Team Lead:
 
 ![Brendt](brendt.png)
 
-### User Interface / User Experience Developers:
+### Brendt Mcfeeley | [LinkedIn](https://www.linkedin.com/in/brendt-mcfeeley/) | [GitHub]()
 
-#### [Kenneth Lauritzen](https://linkedin.com/in/kenneth-lauritzen-49907216a/):
+## User Interface / User Experience Developers:
 
 ![Kenneth](kenneth.jpeg)
 
-#### [Andrew Obatake](https://www.linkedin.com/in/andrew-obatake-8a5232106/):
+### Kenneth Lauritzen | [LinkedIn](https://linkedin.com/in/kenneth-lauritzen-49907216a/) | [GitHub]()
 
 ![Andrew](andrew.jpeg)
 
-### Machine Learning / Backend Developers:
+### Andrew Obatake | [LinkedIn](https://www.linkedin.com/in/andrew-obatake-8a5232106/) | [GitHub]()
 
-#### [Sae Hyun Song](https://www.linkedin.com/in/sae-hyun-song/)
+## Machine Learning / Backend Developers:
 
 ![Sae](sae.jpeg):
 
-#### [Kian Kobayashi](https://www.linkedin.com/in/kiankobayashi/):
+### Sae Hyun Song | [LinkedIn](https://www.linkedin.com/in/sae-hyun-song/) | [GitHub]()
 
 ![Kian](kian.jpeg)
 
+### Kian Kobayashi | [LinkedIn](https://www.linkedin.com/in/kiankobayashi/) | [GitHub]()
