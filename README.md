@@ -115,7 +115,7 @@ We would also like to thank the sponsors, partners, and presenters for making su
 # Our Ohana:
 This project would not have been possible without each every one of our amazing and talented teammates!
 
-## Team Lead:
+<h2 align="center" id="">Team Lead</h2>
 
 <p align="center">
   <img width="250px" height="250px" src="images/brendt.png?raw=true" alt="Andrew"/>
@@ -123,24 +123,24 @@ This project would not have been possible without each every one of our amazing 
 <h3 align="center" id="brendtmcfeeleylinkedinhttpswwwlinkedincominbrendtmcfeeleygithubhttpsgithubcombrendtmcfeeley">Brendt Mcfeeley | <a href="https://www.linkedin.com/in/brendt-mcfeeley/">LinkedIn</a> | <a href="https://github.com/brendtmcfeeley">GitHub</a></h3>
 
 
-## User Interface / User Experience Developers:
+<h2 align="center" id="">User Interface / User Experience Developers:</h2>
 
 <p align="center">
   <img width="250px" height="250px" src="images/kenneth.png?raw=true" alt="Andrew"/>
   <img width="250px" height="250px" src="images/andrew.png?raw=true" alt="Andrew"/>
   <h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">
-    Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a>  
-    || Andrew Obatake | <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106/">LinkedIn</a> | <a href="https://github.com/aobatake">GitHub</a>
+    Kenneth Lauritzen: <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a>  
+    || Andrew Obatake: <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106/">LinkedIn</a> | <a href="https://github.com/aobatake">GitHub</a>
   </h3>
 </p>
 
-## Machine Learning / Backend Developers:
+<h2 align="center" id="">Machine Learning / Backend Developers</h2>
 
 <p align="center">
   <img width="250px" height="250px" src="images/sae.png?raw=true" alt="Andrew"/>
   <img width="250px" height="250px" src="images/kian.png?raw=true" alt="Andrew"/>
   <h3 align="center" id="saehyunsonglinkedinhttpswwwlinkedincominsaehyunsonggithubhttpsgithubcomsaehyuns">
-    Sae Hyun Song | <a href="https://www.linkedin.com/in/sae-hyun-song/">LinkedIn</a> | <a href="https://github.com/saehyuns">GitHub</a>
-    || Kian Kobayashi | <a href="https://www.linkedin.com/in/kiankobayashi/">LinkedIn</a> | <a href="https://github.com/kiankoba">GitHub</a>
+    Sae Hyun Song: <a href="https://www.linkedin.com/in/sae-hyun-song/">LinkedIn</a> | <a href="https://github.com/saehyuns">GitHub</a>
+    || Kian Kobayashi: <a href="https://www.linkedin.com/in/kiankobayashi/">LinkedIn</a> | <a href="https://github.com/kiankoba">GitHub</a>
   </h3>
 </p>
