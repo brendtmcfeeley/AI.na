@@ -1,6 +1,39 @@
 # AI.na
 
-### Prerequisites
+![Aina Cover Photo](ainaCoverImage.png)
+
+## Our Aina Vision
+Our vision is to increase the percentage of threatened and endangered native species managed in Hawai'i by 2030 through a focus on sustainability goals demonstrated in the Aloha+ Challenge Dashboard. As students of the University of Hawai'i, we aim to ultimately provide sustainable solutions that are appropriately matched with technologies and platforms learned throughout our education career. We hope to give back to our Aina as much as it has given us.
+
+## Prerequisites
+
+### Linux
+A basic understanding of Linux is highly recommended as we will be using the terminal / commandline. To learn more about linux and its commands click [here](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners).
+
+### Python
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. It is utilized in conjunction with TensorflowLite to train a model to identify the plants. Click [here](https://www.python.org/downloads/) to install the most recent version of Python.
+
+### TensorFlowLite
+After installing Python, the next thing you would want to install is TensorFlowLite using PIP that comes with the Python installation. TensorFlow Lite is the official solution for running machine learning models on mobile and embedded devices. It enables on‑device machine learning inference with low latency and a small binary size on Android, iOS, and other operating systems. To learn more click [here](https://www.tensorflow.org/lite/).
+```
+pip install tensorflow
+```
+
+### Android Studio
+
+### PILLOW
+
+## Installation
+
+## Run the Application
+
+## Much Mahalos
+
+### HACC
+
+### Sponsors
+
+### Our Ohana
 ```
 Python : https://www.python.org/downloads/
 
