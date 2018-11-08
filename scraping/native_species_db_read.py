@@ -1,12 +1,7 @@
 import pyrebase
 
 config = {
-    "apiKey": "AIzaSyA5iBsdCVUJXflcdcmzAzL-gEtiefTShtI",
-    "authDomain": "flowerai-59022.firebaseapp.com",
-    "databaseURL": "https://flowerai-59022.firebaseio.com",
-    "projectId": "flowerai-59022",
-    "storageBucket": "flowerai-59022.appspot.com",
-    "messagingSenderId": "815989022056"
+    "yes"
   }
 
 def main():
