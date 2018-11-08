@@ -3,6 +3,7 @@
 <hr>
 
 <h3 align="center" id="developedbygucciganghttpsgithubcomsaehyunsgithelper">Developed by: <a href="https://github.com/saehyuns/GitHelper/">Gucci Gang</a></h3>
+<h3 align="center" id="developedbygucciganghttpsgithubcomsaehyunsgithelper">Check out the: <a href="https://devpost.com/software/guccigang">DevPost</a></h3>
 
 # Table of Contents:
 * [Aina Vision](#our-aina-vision)
