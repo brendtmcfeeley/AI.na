@@ -74,7 +74,7 @@ public class Camera2BasicFragment extends Fragment
     implements FragmentCompat.OnRequestPermissionsResultCallback {
 
   /** Tag for the {@link Log}. */
-  private static final String TAG = "TfLiteCameraDemo";
+  private static final String TAG = "CAMERA2_FRAGMENT";
 
   private static final String FRAGMENT_DIALOG = "dialog";
 
