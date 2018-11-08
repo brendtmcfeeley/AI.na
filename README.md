@@ -1,6 +1,11 @@
 ![Aina Cover Photo](ainaCoverImage.png)
 
-# Table of Contents
+# Table of Contents:
+* [Aina Vision](#out-aina-vision)
+* [Prerequisites](#prerequisites)
+* [Setting up the Application](#setting-up-the-application)
+* [Much Mahalos](#much-mahalos)
+* [Our Ohana](#our-ohana)
 
 # Our Aina Vision:
 Our vision is to increase the percentage of threatened and endangered native species managed in Hawai'i by 2030 through a focus on sustainability goals demonstrated in the Aloha+ Challenge Dashboard. As students of the University of Hawai'i, we aim to ultimately provide sustainable solutions that are appropriately matched with technologies and platforms learned throughout our education career. We hope to give back to our Aina as much as it has given us.
