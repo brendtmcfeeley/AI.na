@@ -25,11 +25,11 @@ Our vision is to increase the percentage of threatened and endangered native spe
 
 ## Our Solution:
 
-* TensorFlow Lite, a state-of-the-art machine learning library
-* Firebase, a database system backed by Google
-* User reporting, in order to allow users to report back to DLNR where certain plants are located and for identification when the user and/or application are unsure of the plant species
-* Database searching in order to allow the user to cross-reference plants with pictures already in our database
-Compressed webs and images in order to allow for a small application size
+* A way to identify plants using machine learning software
+* A scalable database and data hosting system to keep track of plant sightings
+* User image submissions, allowing the user to report back to the DLNR with information such as plant appearance and sighting location
+* Fast database searching, empowering users to quickly cross-reference plants with pictures already in our database
+* Compressed machine learning models and images in order to allow for a small, portable application size
 
 # Prerequisites:
 
@@ -121,17 +121,17 @@ This project would not have been possible without each every one of our amazing 
 
 ## User Interface / User Experience Developers:
 
-<p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/kenneth.jpeg?raw=true" alt="Andrew"/>
+<p align="center" display="inline">
+  <div display="inline">
+    <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/kenneth.jpeg?raw=true" alt="Andrew"/>
+   <h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a>      </h3>
+  </div>
+  <div display="inline">
+   <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/andrew.jpeg?raw=true" alt="Andrew"/>
+   <h3 align="center" id="andrewobatakelinkedinhttpswwwlinkedincominandrewobatake8a5232106githubhttpsgithubcomaobatake">Andrew Obatake | <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106/">LinkedIn</a> | <a href="https://github.com/aobatake">GitHub</a>
+    </h3>
+  </div>
 </p>
-<h3 align="center" id="kennethlauritzenlinkedinhttpslinkedincominkennethlauritzen49907216agithub">Kenneth Lauritzen | <a href="https://linkedin.com/in/kenneth-lauritzen-49907216a/">LinkedIn</a> | <a href="https://github.com/klauritz">GitHub</a></h3>
-
-<hr>
-
-<p align="center">
-  <img src="https://github.com/brendtmcfeeley/FlowerAI/blob/master/andrew.jpeg?raw=true" alt="Andrew"/>
-</p>
-<h3 align="center" id="andrewobatakelinkedinhttpswwwlinkedincominandrewobatake8a5232106githubhttpsgithubcomaobatake">Andrew Obatake | <a href="https://www.linkedin.com/in/andrew-obatake-8a5232106/">LinkedIn</a> | <a href="https://github.com/aobatake">GitHub</a></h3>
 
 ## Machine Learning / Backend Developers:
 
