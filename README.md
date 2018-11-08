@@ -29,9 +29,41 @@ pip install PILLOW
 After installing Tensorflow, the next thing you need to install is Android Studio. Android Studio is the official [Integrated Development Environment (IDE)](https://searchsoftwarequality.techtarget.com/definition/integrated-development-environment) for [Android app](https://en.wikipedia.org/wiki/Android_(operating_system)) development, based on [IntelliJ IDEA](https://www.jetbrains.com/idea/). Android Studio will be used as our main working environment. To learn more and download, click [here](https://developer.android.com/studio/).
 
 ### Clone the Repository
-Go to 
+Clone the repository by doing git clone in the terminal / commandline:
+```
+git clone https://github.com/brendtmcfeeley/FlowerAI.git
+```
 
-## Run the Application
+## Set up the Application
+Open AndroidStudio. After it loads select "Open an existing Android Studio project" from this popup:
+
+![Android Example1](android1.png)
+
+In the file selector, choose FlowerAI/android/tflite from your working directory.
+
+You will get a "Gradle Sync" popup, the first time you open the project, asking about using gradle wrapper. Click "OK".
+
+![Android Example2](android2.png)
+
+To set up an emulator or a hardware device to run your app, click [here](https://developer.android.com/studio/run/) for more information.
+
+### Interface
+
+The app will open the camera as soon as it's loaded and will be running the model in real time!
+
+![Example Image 1](exImg3.jpg)
+
+You can also choose to search plants that are in the database!
+
+![Example Image 2](exImg2.jpg)
+
+After selecting an item from the list you should see something like this!
+
+![Example Image 3](exImg1.jpg)
+
+or 
+
+![Example Image 3](exImg4.jpg)
 
 ## Much Mahalos
 
