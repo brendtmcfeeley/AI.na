@@ -1,11 +1,11 @@
-# AI.na
-
 ![Aina Cover Photo](ainaCoverImage.png)
 
-## Our Aina Vision:
+# Table of Contents
+
+# Our Aina Vision:
 Our vision is to increase the percentage of threatened and endangered native species managed in Hawai'i by 2030 through a focus on sustainability goals demonstrated in the Aloha+ Challenge Dashboard. As students of the University of Hawai'i, we aim to ultimately provide sustainable solutions that are appropriately matched with technologies and platforms learned throughout our education career. We hope to give back to our Aina as much as it has given us.
 
-### Our Challenge:
+## Our Challenge:
 
 * No surefire way to identify plants out in the field
 * No way to keep track of plants out in the field
@@ -13,7 +13,7 @@ Our vision is to increase the percentage of threatened and endangered native spe
 * No way to confirm data on all plants
 * No sustainable way to pass down information to newcomers or the public
 
-### Our Solution:
+## Our Solution:
 
 * TensorFlow Lite, a state-of-the-art machine learning library
 * Firebase, a database system backed by Google
@@ -21,15 +21,15 @@ Our vision is to increase the percentage of threatened and endangered native spe
 * Database searching in order to allow the user to cross-reference plants with pictures already in our database
 Compressed webs and images in order to allow for a small application size
 
-## Prerequisites:
+# Prerequisites:
 
-### Linux:
+## Linux:
 A basic understanding of Linux is highly recommended as we will be using the terminal / commandline. To learn more about linux and its commands click [here](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners).
 
-### Python:
+## Python:
 Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. It is utilized in conjunction with TensorflowLite to train a model to identify the plants. Click [here](https://www.python.org/downloads/) to install the most recent version of Python.
 
-### TensorFlowLite & Pillow:
+## TensorFlowLite & Pillow:
 After installing Python, the next thing you would want to install is TensorFlowLite using PIP that comes with the Python installation. TensorFlow Lite is the official solution for running machine learning models on mobile and embedded devices. It enables on‑device machine learning inference with low latency and a small binary size on Android, iOS, and other operating 
 systems. To learn more click [here](https://www.tensorflow.org/lite/).
 
@@ -41,16 +41,16 @@ pip install tensorflow
 pip install PILLOW
 ```
 
-### Android Studio:
+## Android Studio:
 After installing Tensorflow, the next thing you need to install is Android Studio. Android Studio is the official [Integrated Development Environment (IDE)](https://searchsoftwarequality.techtarget.com/definition/integrated-development-environment) for [Android app](https://en.wikipedia.org/wiki/Android_(operating_system)) development, based on [IntelliJ IDEA](https://www.jetbrains.com/idea/). Android Studio will be used as our main working environment. To learn more and download, click [here](https://developer.android.com/studio/).
 
-### Clone the Repository:
+## Clone the Repository:
 Clone the repository by doing git clone in the terminal / commandline:
 ```
 git clone https://github.com/brendtmcfeeley/FlowerAI.git
 ```
 
-## Set up the Application:
+# Setting up the Application:
 Open AndroidStudio. After it loads select "Open an existing Android Studio project" from this popup:
 
 <p align="center">
@@ -67,7 +67,7 @@ You will get a "Gradle Sync" popup, the first time you open the project, asking 
 
 To set up an emulator or a hardware device to run your app, click [here](https://developer.android.com/studio/run/) for more information.
 
-### Interface:
+## Interface:
 
 The app will open the camera as soon as it's loaded and will be running the model in real time! You can also choose to search plants that are in the database!
 
