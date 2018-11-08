@@ -63,20 +63,44 @@ After selecting an item from the list you should see something like this!
 
 You can then choose to press the Report Sighting button to report that plant to the agency or upload your own image of an unidentified plant to the database for the agencies to see what you've found!
 
-## Much Mahalos
+# Much Mahalos
 
-### HACC
+## HACC
 ![HACC IMAGE](http://hacc.hawaii.gov/wp-content/uploads/2017/08/HACC-with-Flag-final.png)
 
 We would like to thank [HACC](http://hacc.hawaii.gov/) for the opportunity to help contribute solutions to challenges focusing on social, economic, and environemntal factors that are faced today. This was an engaging experience with the community in trying to modernize state functions, services, and supporting the IT workforce development.
 
-### Sponsors
+## Sponsors
 We would also like to thank the sponsors, partners, and presenters for making such an event possible for not just us but for everyone else who had been involved with this competition!
 
-![Sponsors Image](sponsorsImg)
-![Partners Image](partnersImg)
+![Sponsors Image](sponsorsImg.png)
+![Partners Image](partnersImg.png)
 
+## Our Ohana
+This project would not have been possible without each every one of our amazing and talented teammates!
 
+Team Lead:
 
+![Brendt](brendt.png)
+[Brendt Mcfeeley](https://www.linkedin.com/in/brendt-mcfeeley/)
 
-### Our Ohana
+User Interface / User Experience Developers:
+
+[Kenneth Lauritzen](https://linkedin.com/in/kenneth-lauritzen-49907216a/):
+
+![Kenneth](kenneth.png)
+
+[Andrew Obatake](https://www.linkedin.com/in/andrew-obatake-8a5232106/):
+
+![Andrew](andrew.png)
+
+Machine Learning / Backend Developers:
+
+![Sae](sae.png):
+
+[Sae Hyun Song](https://www.linkedin.com/in/sae-hyun-song/)
+
+[Kian Kobayashi](https://www.linkedin.com/in/kiankobayashi/):
+
+![Kian](kian.png)
+
